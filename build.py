@@ -625,11 +625,12 @@ class Site:
             rows = h["rows"]
             t1 = rows[0]
             noun = h["noun"]
-            title = f"Healthiest {h['name']}: {len(rows)} {noun[0].upper() + noun[1:]} Ranked by Nutrition"
+            tnoun = {"fast food items": "Fast Food", "bars": "Protein Bars", "nuts and seeds": "Nuts and Seeds"}.get(noun, noun.title())
+            title = f"Healthiest {tnoun}: {len(rows)} Ranked by Nutrition Score"
             if len(title) > 60:
-                title = f"Healthiest {h['name']}: {len(rows)} Ranked by Nutrition"
+                title = f"Healthiest {tnoun}: {len(rows)} Ranked by Nutrition"
             if len(title) > 60:
-                title = f"Healthiest {h['name']} Ranked (USDA Data)"
+                title = f"Healthiest {tnoun} Ranked (USDA Data)"
             cols = [(k, self.N[k]) for k in h["columns"]]
             desc = (f"{len(rows)} {noun} ranked by a transparent nutrient-density score from USDA data. {t1.get('short', t1['name'])} ranks first, "
                     f"followed by {rows[1].get('short', rows[1]['name'])} and {rows[2].get('short', rows[2]['name'])}. Calories, protein, fiber and more per serving.")
