@@ -8,7 +8,7 @@
 
 <div class="grid2">
 <div>
-<div class="nf" aria-label="Nutrition facts panel">
+<section class="nf" aria-label="Nutrition facts panel">
 <p class="nf-title">Nutrition Facts</p>
 <div class="nf-serv"><span>Serving size</span><span>{{ f.serving.short if not f.serving.fallback else '100 g' }} ({{ f.serving.g|fmt(0) }} g)</span></div>
 <div class="nf-cal"><span><b>Calories</b></span><b>{{ f.kcal|fmt(0) }}</b></div>
@@ -20,18 +20,18 @@
 {% set r = S|selectattr('key','equalto','protein')|first %}{% if r %}<div class="nf-row thick"><span><b>Protein</b> {{ r.amount|fmt(1) }}g</span><span><b>{{ r.dv|pct }}</b></span></div>{% endif %}
 {{ nfrow('vit_d', 'Vitamin D', 'ind') }}{{ nfrow('calcium', 'Calcium', 'ind') }}{{ nfrow('iron', 'Iron', 'ind') }}{{ nfrow('potassium', 'Potassium', 'ind') }}
 <p class="nf-dv">* The % Daily Value (DV) tells you how much a nutrient in a serving contributes to a daily diet. 2,000 calories a day is used for general nutrition advice. Values from USDA FoodData Central; label rounding rules are not applied.</p>
-</div>
+</section>
 </div>
 <div>
-<div class="panel"><h3 class="h-sm">Calorie breakdown</h3><div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">{{ f.donut }}<ul class="small" style="margin:0;padding-left:18px">{% set p = S|selectattr('key','equalto','protein')|first %}{% set fa = S|selectattr('key','equalto','fat')|first %}{% set c = S|selectattr('key','equalto','carbs')|first %}<li><span class="ca">■</span> Protein {{ f.macro_pct.protein|fmt(0) }}%</li><li><span class="cb">■</span> Fat {{ f.macro_pct.fat|fmt(0) }}%</li><li><span style="color:var(--accent-2)">■</span> Carbohydrate {{ f.macro_pct.carbs|fmt(0) }}%</li></ul></div><p class="tiny muted" style="margin:8px 0 0">Share of calories by the 4-9-4 Atwater factors; the centre shows USDA's calorie value.</p></div>
-<div class="panel" style="margin-top:14px"><h3 class="h-sm">Scores</h3>{{ score_block(f.nrf, f.dii, f.dii_label, f.dii_pct) }}</div>
+<div class="panel"><h2 class="h-sm">Calorie breakdown</h2><div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">{{ f.donut }}<ul class="small" style="margin:0;padding-left:18px">{% set p = S|selectattr('key','equalto','protein')|first %}{% set fa = S|selectattr('key','equalto','fat')|first %}{% set c = S|selectattr('key','equalto','carbs')|first %}<li><span class="ca">■</span> Protein {{ f.macro_pct.protein|fmt(0) }}%</li><li><span class="cb">■</span> Fat {{ f.macro_pct.fat|fmt(0) }}%</li><li><span style="color:var(--accent-2)">■</span> Carbohydrate {{ f.macro_pct.carbs|fmt(0) }}%</li></ul></div><p class="tiny muted" style="margin:8px 0 0">Share of calories by the 4-9-4 Atwater factors; the centre shows USDA's calorie value.</p></div>
+<div class="panel" style="margin-top:14px"><h2 class="h-sm">Scores</h2>{{ score_block(f.nrf, f.dii, f.dii_label, f.dii_pct) }}</div>
 </div>
 </div>
 
 <h2>All nutrients in {{ f.name|lower_name }}</h2>
-<div class="tabs" data-group="nt" role="tablist">{% for key, label, g in f.bases %}<button type="button" role="tab" data-tab="{{ key }}" aria-selected="{{ 'true' if loop.first else 'false' }}">Per {{ label }}</button>{% endfor %}</div>
+<div class="tabs" data-group="nt" role="tablist">{% for key, label, g in f.bases %}<button type="button" role="tab" id="nt-tab-{{ loop.index }}" aria-controls="nt-panel-{{ loop.index }}" data-tab="{{ key }}" aria-selected="{{ 'true' if loop.first else 'false' }}">Per {{ label }}</button>{% endfor %}</div>
 {% for key, label, g in f.bases %}
-<div data-tabpanel="nt" data-tab="{{ key }}" {% if not loop.first %}hidden{% endif %}>
+<div role="tabpanel" id="nt-panel-{{ loop.index }}" aria-labelledby="nt-tab-{{ loop.index }}" data-tabpanel="nt" data-tab="{{ key }}" {% if not loop.first %}hidden{% endif %}>
 <div class="table-wrap"><table><thead><tr><th>Nutrient</th><th class="num">Per {{ label }}</th><th>% Daily Value</th></tr></thead>
 <tbody>{{ nutrient_rows(f.tables[key], ['macros', 'fats', 'vitamins', 'minerals', 'carotenoids', 'other', 'amino']) }}</tbody></table></div>
 </div>

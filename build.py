@@ -125,7 +125,7 @@ def level_word(dv: float | None) -> str | None:
 
 def redirect_stub(target: str, label: str) -> str:
     url = SITE_URL + target
-    return (f'<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>{label}</title>'
+    return (f'<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{label}</title>'
             f'<link rel="canonical" href="{url}"><meta name="robots" content="noindex">'
             f'<meta http-equiv="refresh" content="0; url={target}"></head>'
             f'<body><p>Moved to <a href="{target}">{label}</a>.</p></body></html>\n')
@@ -769,7 +769,7 @@ class Site:
             self.render(tpl, path, f"{title} | {SITE_NAME}" if len(title) + len(SITE_NAME) + 3 <= 60 and SITE_NAME not in title else title,
                         desc, crumbs=crumbs, priority=0.3, heading=title, pool_n=len(self.pool), food_n=len(self.foods),
                         rank_n=len(self.rank_keys), ndefs=self.ndefs)
-        self.render("404.html", "/404.html", f"Page Not Found | {SITE_NAME}", "Page not found.", is_404=True, crumbs=[("/", "Home"), ("/404.html", "Page not found")])
+        self.render("404.html", "/404.html", f"Page Not Found | {SITE_NAME}", "That page does not exist on NutrientChart. Search for a food or nutrient, or browse the rankings, healthiest lists, comparisons and guides.", is_404=True, crumbs=[("/", "Home"), ("/404.html", "Page not found")])
 
     def finish(self):
         sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
