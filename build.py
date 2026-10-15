@@ -38,7 +38,7 @@ SITE_NAME = "NutrientChart"
 CONTACT_EMAIL = "info@nutrientchart.com"
 OG_IMAGE = SITE_URL + "/static/og-image.png"      # 1200x630, scripts/make_og.py
 ADSENSE_PUB = "ca-pub-5861928596436289"
-GA_ID = ""                                        # GA4 measurement id (G-XXXXXXXXXX); tags are omitted while empty
+GA_ID = "G-4XSPLZKQB3"                                        # GA4 measurement id (G-XXXXXXXXXX); tags are omitted while empty
 AD_SLOTS: dict[str, str] = {}                     # AdSense slot ids; empty = auto ads only
 TODAY = date.today()
 DATA_UPDATED = "2026-10-15"   # last data/content change: dateModified, sitemap lastmod, "Updated" lines
