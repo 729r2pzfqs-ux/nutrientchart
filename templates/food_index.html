@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>Nutrition facts for {{ by_group.values()|map('length')|sum }} common foods</h1>
+<p class="lede">Calories, protein, fiber, vitamins and minerals per serving and per 100 g, with % Daily Value, where each food ranks for every nutrient, and its nutrient-density score. All values from USDA FoodData Central.</p>
+{% for g, foods in by_group.items() %}
+<h2>{% if g in meta.rank_groups %}<a href="/category/{{ g }}/">{{ group_names[g] }}</a>{% else %}{{ group_names[g] }}{% endif %}</h2>
+<div class="cards">{% for f in foods %}<a class="card" href="{{ f.url }}"><span class="card-top"><span class="card-title">{{ f.name }}</span><span class="card-val">{{ f.kcal|fmt(0) }} kcal</span></span><span class="card-meta">per {{ f.serving.short }}</span><span class="card-text">{% for r in f.highlights[:3] %}{{ r.name|short }} {{ r.dv|pct }}{% if not loop.last %} · {% endif %}{% endfor %}</span></a>{% endfor %}</div>
+{% endfor %}
+{% endblock %}

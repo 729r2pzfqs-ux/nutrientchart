@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% from "macros.html" import food_link %}
+{% block body %}
+<section class="hero">
+<h1>Which foods are highest in each nutrient? Ranked per serving, from USDA data.</h1>
+<p class="lede">{{ pool_n|fmt(0) }} whole foods ranked by potassium, magnesium, iron, protein, fiber, vitamin D and {{ rank_n - 6 }} more nutrients, by the amount in a real serving rather than per 100 g. Full nutrition facts for {{ food_n }} common foods, side-by-side comparisons and transparent "healthiest" rankings.</p>
+<form class="search hero-search" role="search" onsubmit="return false">
+<input type="search" class="search-input" placeholder="Try potassium, kale vs spinach, banana…" aria-label="Search foods and nutrients" autocomplete="off">
+<div class="search-results" hidden></div>
+</form>
+<p class="hero-links"><a class="btn" href="/foods-high-in/">Browse foods high in…</a> <a class="btn btn-ghost" href="/healthiest/">Healthiest by category</a></p>
+<div class="stats-row"><div class="stat"><b>{{ pool_n|fmt(0) }}</b><span>whole foods ranked</span></div><div class="stat"><b>{{ rank_n }}</b><span>nutrient rankings</span></div><div class="stat"><b>{{ food_n }}</b><span>nutrition profiles</span></div><div class="stat"><b>{{ comps_n }}</b><span>comparisons</span></div></div>
+</section>
+
+<h2>Foods high in…</h2>
+<div class="cards">{% for c in top %}<a class="card" href="/foods-high-in/{{ c.slug }}/"><span class="card-top"><span class="card-title">{{ c.name|short }}</span><span class="card-val">{{ c.top.amount|fmt(N[c.key].decimals) }} {{ c.unit }}</span></span><span class="card-meta">#1 {{ c.top.name }}</span><span class="card-text">{{ c.top.serving }}{% if c.top.dv %} · {{ c.top.dv|pct }} DV{% endif %} · {{ c.n }} foods ranked</span></a>{% endfor %}</div>
+<p><a href="/foods-high-in/">All {{ rank_n }} nutrient rankings</a></p>
+
+<h2>Healthiest by category</h2>
+<p class="muted">Each list is ranked by a published nutrient-density score, not opinion. <a href="/about/methodology/">How it works</a>.</p>
+<div class="cards">{% for slug, h in healthiest.items() %}<a class="card" href="/healthiest/{{ slug }}/"><span class="card-title">Healthiest {{ h.name|lower }}</span><span class="card-meta">#1 {{ h.rows[0].name }}</span><span class="card-text">{{ h.total }} {{ h.noun }} ranked</span></a>{% endfor %}</div>
+
+<h2>Popular foods</h2>
+<div class="cards">{% for f in popular %}<a class="card" href="{{ f.url }}"><span class="card-top"><span class="card-title">{{ f.name }}</span><span class="card-val">{{ f.kcal|fmt(0) }} kcal</span></span><span class="card-meta">per {{ f.serving.short }}</span><span class="card-text">{% for r in f.highlights[:3] %}{{ r.name|short }} {{ r.dv|pct }}{% if not loop.last %} · {% endif %}{% endfor %}</span></a>{% endfor %}</div>
+<p><a href="/food/">All {{ food_n }} foods</a></p>
+
+<h2>Popular comparisons</h2>
+<ul class="pill-list">{% for c in comps %}<li><a href="/compare/{{ c.id }}/">{{ c.title }}</a></li>{% endfor %}</ul>
+<p><a href="/compare/">All comparisons</a></p>
+
+<h2>Browse by food group</h2>
+<div class="cards">{% for g, c in cats.items() %}<a class="card" href="/category/{{ g }}/"><span class="card-title">{{ c.name }}</span><span class="card-meta">{{ c.count }} foods in the ranking pool</span><span class="card-text">{{ c.pages|length }} full nutrition profiles</span></a>{% endfor %}</div>
+
+<h2>How the rankings work</h2>
+<p class="prose">Every number comes from USDA FoodData Central, the reference database behind most nutrition apps. We rank by the amount in a <strong>common serving</strong> (a cup, a medium fruit, 3 oz of fish) because per-100 g lists are topped by spices, powders and dried items nobody eats by the hundred grams. Spices, baby foods, powders and heavily processed items are left out of the "foods high in" lists, and each food family appears once so a single vegetable does not fill a list with its raw, cooked and frozen versions. <a href="/about/methodology/">Read the full methodology</a>.</p>
+{% endblock %}

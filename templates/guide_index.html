@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>Nutrition guides built from data</h1>
+<p class="lede">Ranked food lists for a goal, computed from USDA values with the method shown on the page. No supplement pitches, no "superfood" lists without numbers.</p>
+<div class="cards">{% for g in guides %}<a class="card" href="/guide/{{ g.slug }}/"><span class="card-title">{{ g.title }}</span><span class="card-text">{{ g.summary }}</span></a>{% endfor %}</div>
+{% endblock %}

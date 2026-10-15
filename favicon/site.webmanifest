@@ -1,0 +1,19 @@
+{
+  "name": "NutrientChart",
+  "short_name": "NutrientChart",
+  "icons": [
+    {
+      "src": "/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0f2a1f",
+  "background_color": "#f7f8f6",
+  "display": "browser"
+}

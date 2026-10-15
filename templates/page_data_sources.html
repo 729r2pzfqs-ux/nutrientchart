@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block body %}
+<article class="prose">
+<h1>Data sources and licensing</h1>
+<p class="answer">NutrientChart is built from public-domain U.S. government data. This page lists every dataset used, its release, and its license.</p>
+<h2>USDA FoodData Central</h2>
+<ul>
+<li><strong>SR Legacy</strong>, April 2018 (final release). {{ meta.sr_foods|fmt(0) }} foods, up to 150 nutrients each, with household portion weights. The historical USDA National Nutrient Database for Standard Reference.</li>
+<li><strong>Foundation Foods</strong>, April 2026 release. {{ meta.fnd_foods }} minimally processed foods with new analytical values and sample statistics. Used to update matching SR Legacy foods.</li>
+</ul>
+<p>License: "USDA FoodData Central data are in the public domain and they are not copyrighted. They are published under CC0 1.0 Universal." USDA asks that FoodData Central be listed as the source. Suggested citation: <em>{{ usda_citation }}</em> Each food page links to its USDA record. The bulk CSV files are available at <a href="https://fdc.nal.usda.gov/download-datasets/" rel="noopener">fdc.nal.usda.gov/download-datasets</a>.</p>
+<h2>FDA Daily Values</h2>
+<p>Percent Daily Values use the FDA reference values for adults and children aged 4 and over (21 CFR 101.9(c)), as published on the FDA page <a href="https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels" rel="noopener">Daily Value on the Nutrition and Supplement Facts Labels</a>.</p>
+<h2>Scoring references</h2>
+<p>The nutrient-density score follows Drewnowski's NRF9.3 index (2009) and the inflammatory profile score adapts the effect scores published with the Dietary Inflammatory Index (Shivappa et al., 2014). Both are peer-reviewed, public formulas; see the <a href="/about/methodology/">methodology</a> page for exactly how they are applied.</p>
+<h2>What is not used</h2>
+<p>No proprietary nutrition databases, no manufacturer-supplied data outside USDA's records, no ORAC "antioxidant capacity" values (USDA withdrew that database in 2012), and no user-submitted data.</p>
+<h2>Reuse</h2>
+<p>The underlying USDA numbers are public domain. NutrientChart's derived tables (servings, rankings, scores) may be quoted with a link to the page they came from. For bulk reuse, email <a href="mailto:{{ email }}">{{ email }}</a>.</p>
+</article>
+{% endblock %}

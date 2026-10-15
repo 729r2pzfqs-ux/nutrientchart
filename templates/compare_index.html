@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>Food nutrition comparisons</h1>
+<p class="lede">{{ comps|length }} side-by-side comparisons: calories, protein, fiber, vitamins and minerals per serving and per 100 g, with the winner for each nutrient and a data-driven verdict.</p>
+<div class="cards">{% for c in comps %}<a class="card" href="/compare/{{ c.id }}/"><span class="card-title">{{ c.title }}</span><span class="card-meta">{{ group_names[c.a.group] }}{% if not c.same_group %} vs {{ group_names[c.b.group] }}{% endif %}</span><span class="card-text">{{ c.verdict[0] if c.verdict else '' }}</span></a>{% endfor %}</div>
+<h2>Foods you can compare</h2>
+<ul class="pill-list">{% for f in foods %}<li><a href="{{ f.url }}">{{ f.name }}</a></li>{% endfor %}</ul>
+{% endblock %}

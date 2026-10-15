@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% from "macros.html" import faq_block, ad, food_link, dvbar %}
+{% block body %}
+<h1>Healthiest {{ h.name|lower }}{% if h.name|lower != h.noun %}: {{ rows|length }} {{ h.noun }} ranked{% endif %}</h1>
+<p class="answer">{{ h.intro }}</p>
+<h2>Top 10</h2>
+<ol class="rank-list">{% for r in rows[:10] %}<li><span><span class="rl-name">{{ food_link(r) }}</span><span class="rl-serv">{{ r.serving }} ({{ r.g|fmt(0) }} g) · {{ r.kcal }} kcal{% for k in h.columns[1:3] %} · {{ N[k].name|short|lower }} {{ r.per[k]|fmt(N[k].decimals) }} {{ N[k].unit }}{% endfor %}</span></span><span class="rl-val"><b>{{ r.score|fmt(1) }}</b><span>score</span></span></li>{% endfor %}</ol>
+{{ ad() }}
+<h2>All {{ rows|length }} {{ h.noun }}</h2>
+<div class="filter-row"><input type="search" class="table-filter" data-table="h-table" placeholder="Filter…" aria-label="Filter table"></div>
+<div class="table-wrap"><table class="sortable" id="h-table"><thead><tr><th class="num" data-sort="num">#</th><th>{{ h.name }}</th><th>Serving</th>{% for k, nd in cols %}<th class="num" data-sort="num">{{ nd.name|short }} ({{ 'kcal' if k == 'energy' else nd.unit }})</th>{% endfor %}<th class="num" data-sort="num">Score</th>{% if h.score != 'drink' %}<th class="num" data-sort="num">NRF9.3</th>{% endif %}</tr></thead>
+<tbody>{% for r in rows %}<tr><td class="rank" data-v="{{ r.rank }}">{{ r.rank }}</td><td>{{ food_link(r) }}</td><td class="small">{{ r.serving }} ({{ r.g|fmt(0) }} g)</td>{% for k, nd in cols %}<td class="num" data-v="{{ r.per[k] or 0 }}">{{ r.per[k]|fmt(nd.decimals) }}</td>{% endfor %}<td class="num" data-v="{{ r.score }}"><b>{{ r.score|fmt(1) }}</b></td>{% if h.score != 'drink' %}<td class="num muted" data-v="{{ r.nrf or 0 }}">{{ r.nrf|fmt(0) }}</td>{% endif %}</tr>{% endfor %}</tbody></table></div>
+<div class="method"><p><strong>How the score works.</strong> {% if h.score == 'drink' %}Score = −(grams of sugar per 8 fl oz) − (calories per 8 fl oz ÷ 20). Higher (closer to zero) is better. Caffeine is shown but not scored: the right dose depends on the person.{% else %}Score = NRF9.3 nutrient density per 100 kcal (sum of %DV for protein, fiber, vitamins A, C and E, calcium, iron, potassium and magnesium, each capped at 100%, minus %DV for saturated fat, added sugars (total sugars used as a proxy) and sodium){% if h.penalize %}, minus 10% of the %DV per 100 kcal for {% for k in h.penalize %}{{ N[k].name|lower }}{% if not loop.last %} and {% endif %}{% endfor %} as a category-specific tiebreaker{% endif %}. Per-100 kcal scoring favours foods that deliver nutrients for few calories; a food's absolute amounts per serving are in the table.{% endif %} Items are from USDA FoodData Central SR Legacy (2018) and reflect the products USDA analysed; current retail formulations may differ. <a href="/about/methodology/">Full methodology</a>.</p></div>
+{{ faq_block(faq) }}
+<h2>Other categories</h2>
+<ul class="pill-list">{% for o in others %}<li><a href="/healthiest/{{ o.slug }}/">Healthiest {{ o.name|lower }}</a></li>{% endfor %}</ul>
+{% endblock %}

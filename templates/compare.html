@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% from "macros.html" import faq_block, ad, score_block %}
+{% block body %}
+<h1>{{ c.title }}: nutrition compared</h1>
+<p class="answer">{% for v in c.verdict %}{{ v }} {% endfor %}</p>
+<div class="compare-head">
+<a class="panel" href="{{ a.url }}"><div class="big ca">{{ a.name }}</div><div class="muted small">{{ a.serving.short }} ({{ a.serving.g|fmt(0) }} g) · {{ a.kcal|fmt(0) }} kcal</div><div class="small">NRF9.3 {{ a.nrf|fmt(0) }} · {{ a.dii_label }}</div><div class="small muted">Wins {{ c.wins_a }} nutrients</div></a>
+<a class="panel" href="{{ b.url }}"><div class="big cb">{{ b.name }}</div><div class="muted small">{{ b.serving.short }} ({{ b.serving.g|fmt(0) }} g) · {{ b.kcal|fmt(0) }} kcal</div><div class="small">NRF9.3 {{ b.nrf|fmt(0) }} · {{ b.dii_label }}</div><div class="small muted">Wins {{ c.wins_b }} nutrients</div></a>
+</div>
+<h2>% Daily Value per serving</h2>
+<div class="chart-box">{{ c.chart }}</div>
+{{ ad() }}
+<h2>Nutrient by nutrient</h2>
+<p class="serving-note">Per serving: <span class="ca">{{ an }}</span> {{ a.serving.short }} ({{ a.serving.g|fmt(0) }} g), <span class="cb">{{ bn }}</span> {{ b.serving.short }} ({{ b.serving.g|fmt(0) }} g). Per 100 g columns compare equal weights. The highlighted cell has the higher amount when the gap is at least 15%.</p>
+<div class="table-wrap"><table class="vs-table"><thead><tr><th>Nutrient</th><th class="num ca">{{ an }} / serving</th><th class="num cb">{{ bn }} / serving</th><th class="num ca">{{ an }} / 100 g</th><th class="num cb">{{ bn }} / 100 g</th></tr></thead>
+<tbody>{% for r in c.rows %}<tr><th>{{ r.name }} ({{ r.unit if r.key != 'energy' else 'kcal' }})</th><td class="num {{ 'win' if r.win == 'a' else '' }}">{{ r.a|fmt(r.dec) }}{% if r.a_dv is not none %} <span class="muted small">{{ r.a_dv|pct }}</span>{% endif %}</td><td class="num {{ 'win' if r.win == 'b' else '' }}">{{ r.b|fmt(r.dec) }}{% if r.b_dv is not none %} <span class="muted small">{{ r.b_dv|pct }}</span>{% endif %}</td><td class="num muted">{{ r.a100|fmt(r.dec) }}</td><td class="num muted">{{ r.b100|fmt(r.dec) }}</td></tr>{% endfor %}</tbody></table></div>
+<p class="small muted">Highlighting marks the higher value; for calories, saturated fat, sugars, sodium and cholesterol "higher" is not better. Sources: USDA FoodData Central #{{ a.fdc_id }} and #{{ b.fdc_id }}.</p>
+{{ faq_block(faq) }}
+{% if related %}<h2>Related comparisons</h2><ul class="pill-list">{% for x in related %}<li><a href="/compare/{{ x.id }}/">{{ x.title }}</a></li>{% endfor %}</ul>{% endif %}
+<p><a href="{{ a.url }}">{{ a.name }} nutrition facts</a> · <a href="{{ b.url }}">{{ b.name }} nutrition facts</a> · <a href="/compare/">All comparisons</a></p>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block body %}
+<article class="prose">
+<h1>Terms of use</h1>
+<p>Last updated {{ updated }}.</p>
+<h2>Information only</h2>
+<p>NutrientChart presents nutrient data from the U.S. Department of Agriculture for general reference. Values are averages for the foods USDA analysed and vary by variety, season, preparation and brand. Nothing on this site is medical, nutritional or dietary advice, and it is not a substitute for consultation with a qualified health professional. Do not use it to manage a medical condition, a medication interaction (for example vitamin K and warfarin) or a restricted diet without professional guidance.</p>
+<h2>No warranty</h2>
+<p>The site and its data are provided "as is", without warranties of any kind. We are not liable for any loss arising from use of the information.</p>
+<h2>Trademarks</h2>
+<p>Brand and product names that appear in USDA food descriptions (for example Cheerios, Red Bull, Taco Bell) are trademarks of their owners and are used only to identify the products USDA analysed. NutrientChart is not affiliated with or endorsed by any food company or by the USDA.</p>
+<h2>Advertising</h2>
+<p>The site is funded by display advertising served by Google AdSense. Advertisers have no influence on rankings or data. The site currently contains no affiliate links; if that changes, a disclosure will be added here and on affected pages.</p>
+<h2>Contact</h2>
+<p><a href="mailto:{{ email }}">{{ email }}</a></p>
+</article>
+{% endblock %}

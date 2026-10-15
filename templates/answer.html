@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% from "macros.html" import dvbar, faq_block, food_link, ad %}
+{% block body %}
+<h1>{{ nshort }} in {{ f.name|lower_name }}</h1>
+<p class="answer">{{ answer }}{{ rank_txt }}</p>
+<h2>{{ nshort }} by portion size</h2>
+<div class="table-wrap"><table><thead><tr><th>Portion</th><th class="num">Weight</th><th class="num">{{ nshort }} ({{ unit }})</th>{% if nd.dv %}<th>% Daily Value</th>{% endif %}</tr></thead>
+<tbody>{% for r in rows %}<tr><td>{{ r.label }}</td><td class="num">{{ r.g|fmt(0) }} g</td><td class="num"><b>{{ r.amount|fmt(nd.decimals) }}</b></td>{% if nd.dv %}<td>{{ dvbar(r.dv) }}</td>{% endif %}</tr>{% endfor %}</tbody></table></div>
+{% if variants %}
+<h2>Other forms of {{ f.name|short|lower_name }}</h2>
+<div class="table-wrap"><table><thead><tr><th>Form</th><th class="num">Per 100 g</th><th class="num">Per serving</th></tr></thead>
+<tbody>{% for v in variants %}<tr><td>{{ v.label }}</td><td class="num">{{ v.per100|fmt(nd.decimals) }} {{ unit }}</td><td class="num">{{ v.amount|fmt(nd.decimals) }} {{ unit }} <span class="muted small">({{ v.serving }})</span></td></tr>{% endfor %}</tbody></table></div>
+{% endif %}
+{{ ad() }}
+{% if nd.about %}<h2>About {{ nlow }}</h2><p class="prose">{{ nd.about }}</p>{% endif %}
+{% if top %}
+<h2>Foods with more {{ nlow }} than {{ f.name|short|lower_name }}</h2>
+<ol>{% for r in top %}<li>{{ food_link(r) }}: {{ r.amount|fmt(nd.decimals) }} {{ unit }} per {{ r.serving }}{% if r.dv is not none %} ({{ r.dv|pct }} DV){% endif %}</li>{% endfor %}</ol>
+<p><a href="/foods-high-in/{{ nd.slug }}/">All foods high in {{ nlow }}</a> · <a href="{{ f.url }}">Full {{ f.name|short|lower_name }} nutrition facts</a></p>
+{% endif %}
+{{ faq_block(faq) }}
+<p class="small muted">Source: <a href="https://fdc.nal.usda.gov/food-details/{{ f.fdc_id }}/nutrients" rel="noopener">USDA FoodData Central #{{ f.fdc_id }}</a>.</p>
+{% endblock %}

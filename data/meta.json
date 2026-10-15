@@ -1,0 +1,31 @@
+{
+ "sr_release": "April 2018",
+ "fnd_release": "April 2026",
+ "sr_foods": 7793,
+ "fnd_foods": 395,
+ "pool": 1677,
+ "overlay_values": 4287,
+ "curated": 122,
+ "group_names": {
+  "fruits": "Fruits",
+  "vegetables": "Vegetables",
+  "legumes": "Legumes",
+  "nuts-seeds": "Nuts & seeds",
+  "grains": "Grains",
+  "fish-seafood": "Fish & seafood",
+  "meat": "Meat & poultry",
+  "dairy-eggs": "Dairy & eggs",
+  "fats-oils": "Fats & oils",
+  "other": "Other foods"
+ },
+ "rank_groups": [
+  "fruits",
+  "vegetables",
+  "legumes",
+  "nuts-seeds",
+  "grains",
+  "fish-seafood",
+  "meat",
+  "dairy-eggs"
+ ]
+}

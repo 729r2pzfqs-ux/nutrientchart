@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% from "macros.html" import food_link %}
+{% block body %}
+<h1>{{ name }}: nutrition rankings</h1>
+<p class="lede">{{ c.count }} {{ name|lower }} in the ranking pool from USDA FoodData Central. Below: the richest {{ name|lower|replace(' and ', ' or ') }} for each nutrient, the group median per serving, and {{ foods|length }} full nutrition profiles.</p>
+{% if foods %}<h2>Nutrition profiles</h2>
+<div class="cards">{% for f in foods %}<a class="card" href="{{ f.url }}"><span class="card-top"><span class="card-title">{{ f.name }}</span><span class="card-val">{{ f.kcal|fmt(0) }} kcal</span></span><span class="card-meta">per {{ f.serving.short }}</span><span class="card-text">{% for r in f.highlights[:3] %}{{ r.name|short }} {{ r.dv|pct }}{% if not loop.last %} · {% endif %}{% endfor %}</span></a>{% endfor %}</div>{% endif %}
+<h2>Richest {{ name|lower }} for each nutrient</h2>
+<div class="table-wrap"><table class="sortable"><thead><tr><th>Nutrient</th><th>Richest source (per serving)</th><th class="num" data-sort="num">Amount</th><th class="num" data-sort="num">Group median / serving</th><th data-nosort>Full list</th></tr></thead>
+<tbody>{% for k, nd, st in stats %}<tr><td>{{ nd.name }}</td><td>{{ food_link(st.top) }} <span class="muted small">({{ st.top.serving }})</span></td><td class="num" data-v="{{ st.top.amount }}"><b>{{ st.top.amount|fmt(nd.decimals) }}</b> {{ nd.unit }}{% if st.top.dv is not none %} <span class="muted small">{{ st.top.dv|pct }} DV</span>{% endif %}</td><td class="num muted" data-v="{{ st.median }}">{{ st.median|fmt(nd.decimals) }} {{ nd.unit }} <span class="small">(n={{ st.n }})</span></td><td class="small">{% if k in subpages %}<a href="/foods-high-in/{{ nd.slug }}/{{ g }}/">{{ name }} high in {{ nd.name|nlow }}</a>{% else %}<a href="/foods-high-in/{{ nd.slug }}/">All foods</a>{% endif %}</td></tr>{% endfor %}</tbody></table></div>
+<p class="small muted">Median is the middle value across the {{ c.count }} {{ name|lower }} in the pool, per common serving. Foods USDA has not analysed for a nutrient are excluded from that nutrient's median.</p>
+<h2>Foods in this group</h2>
+<p class="prose small">{{ c.sample|join(', ') }}{% if c.count > c.sample|length %} and {{ c.count - c.sample|length }} more{% endif %}.</p>
+<p><a href="/category/">All food groups</a> · <a href="/foods-high-in/">All nutrient rankings</a></p>
+{% endblock %}

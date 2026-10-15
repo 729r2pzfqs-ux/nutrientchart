@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}">
+{% if is_404 %}<meta name="robots" content="noindex">{% else %}<link rel="canonical" href="{{ site_url }}{{ path }}">{% endif %}
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:url" content="{{ site_url }}{{ path }}">
+<meta property="og:type" content="{{ og_type or 'website' }}">
+<meta property="og:site_name" content="{{ site_name }}">
+<meta property="og:image" content="{{ og_image }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="NutrientChart: foods ranked by nutrient, per serving">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0f2a1f">
+<link rel="stylesheet" href="{{ asset('style.css') }}">
+<script>
+(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {
+  'analytics_storage': 'denied', 'ad_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied',
+  'wait_for_update': 500,
+  'region': ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','CH','GB']
+});
+gtag('consent', 'default', {'analytics_storage': 'granted', 'ad_storage': 'granted', 'ad_user_data': 'granted', 'ad_personalization': 'granted'});
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense_pub }}" crossorigin="anonymous"></script>
+{% if ga_id %}<script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_id }}"></script>
+<script>gtag('js', new Date()); gtag('config', '{{ ga_id }}');</script>
+{% endif %}
+{% for ld in jsonld %}<script type="application/ld+json">{{ ld|tojson }}</script>
+{% endfor %}
+</head>
+<body>
+<header class="site-header">
+<div class="wrap header-inner">
+<a href="/" class="logo"><svg viewBox="0 0 512 512" aria-hidden="true"><rect x="96" y="312" width="76" height="120" rx="16" fill="#e7f3ec" opacity=".5"/><rect x="218" y="248" width="76" height="184" rx="16" fill="#e7f3ec" opacity=".75"/><rect x="340" y="176" width="76" height="256" rx="16" fill="#34c177"/><path d="M120 236 C120 140 200 72 318 68 C322 184 254 258 150 262 C140 262 128 254 120 236 Z" fill="#34c177"/><path d="M136 252 C180 196 236 150 300 96" stroke="#0f2a1f" stroke-width="16" stroke-linecap="round" fill="none"/></svg>Nutrient<span>Chart</span></a>
+<nav class="nav" aria-label="Main">
+<a href="/foods-high-in/">Foods high in</a><a href="/healthiest/">Healthiest</a><a href="/compare/">Compare</a><a href="/food/">Foods</a><a href="/guide/">Guides</a>
+</nav>
+<div class="header-tools">
+<form class="search" role="search" onsubmit="return false">
+<input type="search" class="search-input" placeholder="Search foods, nutrients…" aria-label="Search foods and nutrients" autocomplete="off">
+<div class="search-results" hidden></div>
+</form>
+<button type="button" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z" fill="currentColor"/></svg></button>
+</div>
+</div>
+</header>
+<main id="main" class="wrap">
+{% if crumbs %}<nav class="crumbs" aria-label="Breadcrumb">{% for href, label in crumbs %}{% if not loop.last %}<a href="{{ href }}">{{ label }}</a><span aria-hidden="true"> › </span>{% else %}<span aria-current="page">{{ label }}</span>{% endif %}{% endfor %}</nav>{% endif %}
+{% block body %}{% endblock %}
+<p class="disclaimer">Nutrient values are from USDA FoodData Central (SR Legacy, April 2018; Foundation Foods, April 2026) and shown per serving as described on each page. %DV uses the FDA Daily Values for adults and children aged 4 and over. This is nutrition data for general information, not medical or dietary advice; talk to a clinician or registered dietitian about your own needs. <a href="/about/methodology/">How the numbers are calculated</a>.</p>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="footer-grid">
+<div><p class="footer-h">Foods high in</p>{% for k in rank_keys[:10] %}<a href="/foods-high-in/{{ N[k].slug }}/">{{ N[k].name|short }}</a>{% endfor %}<a href="/foods-high-in/">All {{ rank_keys|length }} nutrients</a></div>
+<div><p class="footer-h">Healthiest</p><a href="/healthiest/bread/">Bread</a><a href="/healthiest/cereal/">Breakfast cereal</a><a href="/healthiest/cheese/">Cheese</a><a href="/healthiest/fast-food/">Fast food</a><a href="/healthiest/energy-drinks/">Energy drinks</a><a href="/healthiest/protein-bars/">Protein bars</a><a href="/healthiest/milk/">Milk</a><a href="/healthiest/fruits/">Fruits</a><a href="/healthiest/vegetables/">Vegetables</a><a href="/healthiest/nuts/">Nuts and seeds</a></div>
+<div><p class="footer-h">Explore</p><a href="/food/">All foods</a><a href="/compare/">Comparisons</a><a href="/category/">Food groups</a><a href="/guide/">Guides</a><a href="/foods-low-in/">Foods low in</a></div>
+<div><p class="footer-h">Site</p><a href="/about/">About</a><a href="/about/methodology/">Methodology</a><a href="/about/data-sources/">Data sources</a><a href="/privacy/">Privacy policy</a><a href="/terms/">Terms of use</a><a href="mailto:{{ email }}">Contact</a></div>
+</div>
+<p class="fine">Data: {{ usda_citation }} USDA data are in the public domain (CC0 1.0). NutrientChart is an independent reference and is not affiliated with the USDA. &copy; {{ year_now }} NutrientChart.com · <a href="mailto:{{ email }}">{{ email }}</a></p>
+</div>
+</footer>
+<script src="{{ asset('site.js') }}" defer></script>
+</body>
+</html>

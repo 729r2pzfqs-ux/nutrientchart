@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>Foods high in each nutrient</h1>
+<p class="lede">{{ rank_keys|length }} ranked lists of whole foods, per common serving with % Daily Value, from USDA FoodData Central. Pick a nutrient.</p>
+{% for gname, cards in groups.items() if cards %}
+<h2>{{ gname }}</h2>
+<div class="cards">{% for c in cards %}<a class="card" href="/foods-high-in/{{ c.slug }}/"><span class="card-top"><span class="card-title">Foods high in {{ c.name|nlow }}</span><span class="card-val">{{ c.top.amount|fmt(N[c.key].decimals) }} {{ c.unit }}</span></span><span class="card-meta">#1 {{ c.top.name }} ({{ c.top.serving }})</span><span class="card-text">{{ c.n }} foods · {{ c.groups|length }} food groups</span></a>{% endfor %}</div>
+{% endfor %}
+<h2>Foods low in…</h2>
+<ul class="pill-list">{% for k, nd in low %}<li><a href="/foods-low-in/{{ nd.slug }}/">Foods low in {{ (nd.name|short)|lower }}</a></li>{% endfor %}</ul>
+{% endblock %}

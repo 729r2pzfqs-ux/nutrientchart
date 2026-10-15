@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% from "macros.html" import rank_table, rank_list, faq_block, ad, food_link %}
+{% block body %}
+<h1>{{ h1[0]|upper }}{{ h1[1:] }}{% if not low %} <span class="muted" style="font-weight:500">(per serving)</span>{% endif %}</h1>
+<p class="answer">{{ intro }}</p>
+{% if nd.about and not group %}<p class="prose">{{ nd.about }}</p>{% endif %}
+{% if chart %}<h2>Top 10 at a glance</h2><div class="chart-box">{{ chart }}</div>{% endif %}
+<h2>Top {{ [rows|length, 10]|min }} {{ group_names[group]|lower if group else 'foods' }} {{ 'lowest' if low else 'highest' }} in {{ nlow }}</h2>
+{{ rank_list(rows, nd, unit) }}
+{{ ad() }}
+<h2>All {{ rows|length }} {{ group_names[group]|lower if group else 'foods' }} ranked</h2>
+<p class="serving-note">Sort any column. Serving sizes are USDA household measures (a cup, a medium fruit, 3 oz of cooked meat or fish, 1 oz of nuts or cheese). {% if nd.dv %}%DV is based on the FDA Daily Value of {{ nd.dv|fmt(2) }} {{ unit }}.{% else %}The FDA has not set a Daily Value for {{ nlow }}.{% endif %}</p>
+{{ rank_table(rows, nd, unit, 'rank-table', show_group=not group) }}
+{% if sections %}
+<h2>{{ nshort if nshort.startswith('Vit') else nshort|capitalize }} by food group</h2>
+<p class="muted">The best {{ nlow }} sources within each group.{% if subpages %} Each heading opens the full group list.{% endif %}</p>
+<div class="grid2">{% for s in sections %}<div class="panel ngroup"><h3>{% if s.has_page %}<a href="/foods-high-in/{{ nd.slug }}/{{ s.slug }}/">{{ s.name }} high in {{ nlow }}</a>{% else %}{{ s.name }}{% endif %} <span class="muted small">({{ s.n }})</span></h3>
+<ol class="small">{% for r in s.rows[:6] %}<li>{{ food_link(r) }} <span class="muted">· {{ r.amount|fmt(nd.decimals) }} {{ unit }} per {{ r.serving }}</span></li>{% endfor %}</ol></div>{% endfor %}</div>
+{% endif %}
+{% if answers %}
+<h2>{{ nshort if nshort.startswith('Vit') else nshort|capitalize }} in specific foods</h2>
+<ul class="pill-list">{% for slug, f in answers %}<li><a href="/food/{{ slug }}/{{ nd.slug }}/">{{ nshort }} in {{ f.name|short|lower_name }}</a></li>{% endfor %}</ul>
+{% endif %}
+<div class="method"><p><strong>How this list is built.</strong> Values are from USDA FoodData Central (SR Legacy, with Foundation Foods analytical updates where available). The pool is {{ meta.pool|fmt(0) }} whole foods: fruits, vegetables, legumes, nuts and seeds, grains, fish, meat, poultry, dairy and eggs. Spices, herbs, baby foods, powders, flours, dried and freeze-dried items, juices, processed meats, organ meats other than liver and uncommon foods are excluded; meats, fish, grains and legumes are ranked cooked. Each food family appears once and no single animal or plant fills more than six places. Ranking is by amount per serving; the per-100 g column is shown for reference. A food that USDA has not analysed for {{ nlow }} is left out rather than counted as zero. <a href="/about/methodology/">Full methodology</a>.</p></div>
+{{ faq_block(faq) }}
+<h2>Related rankings</h2>
+<ul class="pill-list">{% for k in related %}<li><a href="/foods-high-in/{{ N[k].slug }}/">Foods high in {{ N[k].name|short if N[k].name.startswith('Vit') else (N[k].name|short)|lower }}</a></li>{% endfor %}{% if group %}<li><a href="/foods-high-in/{{ nd.slug }}/">All foods high in {{ nlow }}</a></li>{% for g in all_groups if g != group %}<li><a href="/foods-high-in/{{ nd.slug }}/{{ g }}/">{{ group_names[g] }} high in {{ nlow }}</a></li>{% endfor %}{% endif %}{% if not low and nd.key in ('sodium', 'sugars') %}{% endif %}</ul>
+{% endblock %}

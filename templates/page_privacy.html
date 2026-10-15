@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block body %}
+<article class="prose">
+<h1>Privacy policy</h1>
+<p>Last updated {{ updated }}.</p>
+<h2>What we collect</h2>
+<p>NutrientChart has no accounts, forms or comments and does not ask for personal information. Search runs in your browser; your searches are not sent to us. Your light/dark mode choice is stored in your browser's local storage only.</p>
+<h2>Third-party services</h2>
+<ul>
+<li><strong>Google AdSense</strong> shows advertisements. Google and its partners may use cookies and similar technologies to show ads based on your visits to this and other websites and to measure ad performance. You can opt out of personalised advertising at <a href="https://adssettings.google.com/" rel="noopener">Google Ad Settings</a>. See <a href="https://policies.google.com/technologies/ads" rel="noopener">how Google uses information from sites that use its services</a>.</li>
+{% if ga_id %}<li><strong>Google Analytics 4</strong> measures page views and general usage (pages visited, approximate location, device type) using cookies set by Google.</li>{% endif %}
+<li><strong>GitHub Pages</strong> hosts the site and may log IP addresses for security and operations.</li>
+</ul>
+<p>NutrientChart does not set its own tracking cookies. For visitors in the European Economic Area, the UK and Switzerland, Google's consent mode defaults to denying advertising and analytics storage until consent is given.</p>
+<h2>Your choices</h2>
+<p>You can block or delete cookies in your browser and use the Google opt-out above. The site works without cookies.</p>
+<h2>Children</h2>
+<p>The site is not directed at children under 13 and does not knowingly collect their information.</p>
+<h2>Contact</h2>
+<p><a href="mailto:{{ email }}">{{ email }}</a></p>
+</article>
+{% endblock %}

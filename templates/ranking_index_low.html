@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% from "macros.html" import food_link %}
+{% block body %}
+<h1>Foods low in sodium and sugar</h1>
+<p class="lede">Whole foods with the least of a nutrient per serving. Foods with none are listed first and sorted by overall nutrient density.</p>
+<div class="cards">{% for k, nd, rows in low %}<a class="card" href="/foods-low-in/{{ nd.slug }}/"><span class="card-title">Foods low in {{ (nd.name|short)|lower }}</span><span class="card-text">{% for r in rows %}{{ r.name|short }}{% if not loop.last %}, {% endif %}{% endfor %}…</span></a>{% endfor %}</div>
+<p><a href="/foods-high-in/">Foods high in each nutrient</a></p>
+{% endblock %}

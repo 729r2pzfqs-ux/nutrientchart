@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>Food groups</h1>
+<p class="lede">The eight whole-food groups behind every ranking on NutrientChart, with the richest source of each nutrient and median values per serving.</p>
+<div class="cards">{% for c in groups %}<a class="card" href="/category/{{ c.slug }}/"><span class="card-title">{{ c.name }}</span><span class="card-meta">{{ c.count }} foods ranked · {{ c.pages|length }} profiles</span><span class="card-text">{{ c.sample[:8]|join(', ') }}…</span></a>{% endfor %}</div>
+{% endblock %}

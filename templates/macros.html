@@ -1,0 +1,24 @@
+{% macro dvbar(dv) %}{% if dv is not none %}<span class="dvbar"><span class="bar"><span class="{{ 'over' if dv > 100 else '' }}" style="width:{{ [dv, 100]|min|round(1) }}%"></span></span><em>{{ dv|pct }}</em></span>{% else %}<span class="muted small">no DV</span>{% endif %}{% endmacro %}
+
+{% macro food_link(r) %}{% if r.page %}<a href="/food/{{ r.page }}/">{{ r.name }}</a>{% else %}{{ r.name }}{% endif %}{% endmacro %}
+
+{% macro rank_table(rows, nd, unit, id, show_group=True, show_filter=True) %}
+{% if show_filter %}<div class="filter-row"><input type="search" class="table-filter" data-table="{{ id }}" placeholder="Filter foods…" aria-label="Filter table">{% if show_group %}<select class="table-cat" data-table="{{ id }}" aria-label="Food group"><option value="">All food groups</option>{% for g, gn in group_names.items() if g not in ('other', 'fats-oils') %}<option value="{{ g }}">{{ gn }}</option>{% endfor %}</select>{% endif %}</div>{% endif %}
+<div class="table-wrap"><table class="sortable" id="{{ id }}">
+<thead><tr><th class="num" data-sort="num">#</th><th>Food</th>{% if show_group %}<th>Group</th>{% endif %}<th>Serving</th><th class="num" data-sort="num">{{ nd.name|short }} ({{ unit }})</th>{% if nd.dv %}<th data-sort="num">% Daily Value</th>{% endif %}<th class="num" data-sort="num">Per 100 g</th><th class="num" data-sort="num">kcal</th></tr></thead>
+<tbody>{% for r in rows %}<tr data-group="{{ r.group }}"><td class="rank" data-v="{{ loop.index }}">{{ loop.index }}</td><td>{{ food_link(r) }}</td>{% if show_group %}<td class="small muted">{{ group_names[r.group] }}</td>{% endif %}<td class="small">{{ r.serving }} ({{ r.g|fmt(0) }} g)</td><td class="num" data-v="{{ r.amount }}"><b>{{ r.amount|fmt(nd.decimals) }}</b></td>{% if nd.dv %}<td data-v="{{ r.dv or 0 }}">{{ dvbar(r.dv) }}</td>{% endif %}<td class="num muted" data-v="{{ r.per100 }}">{{ r.per100|fmt(nd.decimals) }}</td><td class="num muted" data-v="{{ r.kcal }}">{{ r.kcal }}</td></tr>{% endfor %}</tbody>
+</table></div>
+{% endmacro %}
+
+{% macro rank_list(rows, nd, unit, n=10) %}<ol class="rank-list">{% for r in rows[:n] %}<li><span><span class="rl-name">{{ food_link(r) }}</span><span class="rl-serv">{{ r.serving }} ({{ r.g|fmt(0) }} g) · {{ r.kcal }} kcal</span></span><span class="rl-val"><b>{{ r.amount|fmt(nd.decimals) }} {{ unit }}</b>{% if r.dv is not none %}<span>{{ r.dv|pct }} DV</span>{% endif %}</span></li>{% endfor %}</ol>{% endmacro %}
+
+{% macro faq_block(faq) %}<section class="faq"><h2>Frequently asked questions</h2>{% for q in faq %}<h3>{{ q.q }}</h3><p>{{ q.a }}</p>{% endfor %}</section>{% endmacro %}
+
+{% macro ad(slot='inline') %}<div class="ad-slot">{% if ad_slots.get(slot) %}<ins class="adsbygoogle" style="display:block" data-ad-client="{{ adsense_pub }}" data-ad-slot="{{ ad_slots[slot] }}" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>{% endif %}</div>{% endmacro %}
+
+{% macro nutrient_rows(rows, groups) %}{% for grp in groups %}{% set grows = rows|selectattr('group', 'equalto', grp)|list %}{% if grows %}<tr><th colspan="3" class="ngroup-h">{{ nut_group_names[grp] }}</th></tr>{% for r in grows %}<tr><td>{{ r.name }}{% if r.src == 'F' %}<span class="src-f" title="Foundation Foods analytical value (April 2026)">F</span>{% endif %}</td><td class="num"><b>{{ r.amount|fmt(r.decimals) }}</b> {{ r.unit }}</td><td>{{ dvbar(r.dv) }}</td></tr>{% endfor %}{% endif %}{% endfor %}{% endmacro %}
+
+{% macro score_block(nrf, dii, dii_label, dii_pct) %}<div class="grid2">
+<div class="score"><div class="score-ring" style="--pct:{{ ([nrf or 0, 0]|max / 6)|round(0) if nrf is not none else 0 }}"><i>{{ nrf|fmt(0) if nrf is not none else '—' }}</i></div><div><div class="score-label">Nutrient density (NRF9.3)</div><div class="score-sub">{% if nrf is none %}Not scored (fewer than 5 kcal per 100 g).{% else %}Nine nutrients to encourage minus three to limit, per 100 kcal. Whole foods range from about −60 to 600; leafy greens score highest.{% endif %}</div></div></div>
+<div class="score"><div class="score-ring" style="--pct:{{ (100 - dii_pct) if dii_pct is not none else 0 }};--ring:{{ 'var(--good)' if dii_pct is not none and dii_pct < 40 else 'var(--mid)' if dii_pct is not none and dii_pct < 80 else 'var(--bad)' }}"><i>{{ dii|fmt(1) if dii is not none else '—' }}</i></div><div><div class="score-label">Inflammatory profile {% if dii_label %}<span class="band {{ 'band-good' if dii_pct < 40 else 'band-mid' if dii_pct < 80 else 'band-bad' }}">{{ dii_label }}</span>{% endif %}</div><div class="score-sub">{% if dii is none %}Not scored.{% else %}Lower is more anti-inflammatory. Percentile {{ dii_pct }} among {{ meta.pool|fmt(0) }} whole foods, from Dietary Inflammatory Index weights applied to this food's nutrients per 100 kcal.{% endif %}</div></div></div>
+</div>{% endmacro %}

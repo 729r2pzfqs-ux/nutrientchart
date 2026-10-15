@@ -1,0 +1,3991 @@
+{
+"fruits": {
+"slug": "fruits",
+"name": "Fruits",
+"count": 94,
+"pages": [
+"banana",
+"apple",
+"avocado",
+"blueberries",
+"strawberries",
+"orange",
+"grapes",
+"watermelon",
+"mango",
+"pineapple",
+"kiwi",
+"pomegranate",
+"cherries",
+"raspberries",
+"blackberries",
+"peach",
+"pear",
+"grapefruit",
+"dates",
+"figs",
+"cantaloupe",
+"lemon",
+"prunes",
+"raisins",
+"cranberries"
+],
+"stats": {
+"potassium": {
+"median": 192.49,
+"n": 94,
+"top": {
+"fdc_id": 171707,
+"name": "Avocados, raw (Florida)",
+"short": "Avocados, raw",
+"group": "fruits",
+"page": "avocado",
+"serving": "1 fruit without skin and seeds",
+"g": 304.0,
+"amount": 1067.04,
+"per100": 351.0,
+"dv": 22.7,
+"kcal": 365
+}
+},
+"magnesium": {
+"median": 10.833,
+"n": 93,
+"top": {
+"fdc_id": 167791,
+"name": "Horned melon (Kiwano)",
+"short": "Horned melon (Kiwano)",
+"group": "fruits",
+"page": null,
+"serving": "1 fruit (4-2/3\" long x 2-3/4\" dia)",
+"g": 209.0,
+"amount": 83.6,
+"per100": 40.0,
+"dv": 19.9,
+"kcal": 92
+}
+},
+"iron": {
+"median": 0.297,
+"n": 94,
+"top": {
+"fdc_id": 167791,
+"name": "Horned melon (Kiwano)",
+"short": "Horned melon (Kiwano)",
+"group": "fruits",
+"page": null,
+"serving": "1 fruit (4-2/3\" long x 2-3/4\" dia)",
+"g": 209.0,
+"amount": 2.362,
+"per100": 1.13,
+"dv": 13.1,
+"kcal": 92
+}
+},
+"protein": {
+"median": 0.735,
+"n": 94,
+"top": {
+"fdc_id": 171707,
+"name": "Avocados, raw (Florida)",
+"short": "Avocados, raw",
+"group": "fruits",
+"page": "avocado",
+"serving": "1 fruit without skin and seeds",
+"g": 304.0,
+"amount": 6.779,
+"per100": 2.23,
+"dv": 13.6,
+"kcal": 365
+}
+},
+"fiber": {
+"median": 2.514,
+"n": 88,
+"top": {
+"fdc_id": 171707,
+"name": "Avocados, raw (Florida)",
+"short": "Avocados, raw",
+"group": "fruits",
+"page": "avocado",
+"serving": "1 fruit without skin and seeds",
+"g": 304.0,
+"amount": 17.024,
+"per100": 5.6,
+"dv": 60.8,
+"kcal": 365
+}
+},
+"calcium": {
+"median": 15.23,
+"n": 94,
+"top": {
+"fdc_id": 169918,
+"name": "Oranges, raw (Florida)",
+"short": "Oranges, raw",
+"group": "fruits",
+"page": null,
+"serving": "1 fruit (2-5/8\" dia)",
+"g": 141.0,
+"amount": 60.63,
+"per100": 43.0,
+"dv": 4.7,
+"kcal": 65
+}
+},
+"zinc": {
+"median": 0.106,
+"n": 93,
+"top": {
+"fdc_id": 171705,
+"name": "Avocados, raw (all commercial varieties)",
+"short": "Avocados, raw",
+"group": "fruits",
+"page": "avocado",
+"serving": "1 avocado, NS as to Florida or California",
+"g": 201.0,
+"amount": 1.286,
+"per100": 0.64,
+"dv": 11.7,
+"kcal": 322
+}
+},
+"vit_c": {
+"median": 11.927,
+"n": 89,
+"top": {
+"fdc_id": 173044,
+"name": "Guavas, common (raw)",
+"short": "Guavas, common",
+"group": "fruits",
+"page": null,
+"serving": "1 fruit, without refuse",
+"g": 55.0,
+"amount": 125.565,
+"per100": 228.3,
+"dv": 139.5,
+"kcal": 37
+}
+},
+"vit_d": {
+"median": 0.0,
+"n": 79,
+"top": null
+},
+"b12": {
+"median": 0.0,
+"n": 77,
+"top": null
+},
+"vit_a": {
+"median": 4.6,
+"n": 89,
+"top": {
+"fdc_id": 169910,
+"name": "Mangos, raw",
+"short": "Mangos, raw",
+"group": "fruits",
+"page": "mango",
+"serving": "1 fruit without refuse",
+"g": 336.0,
+"amount": 181.44,
+"per100": 54.0,
+"dv": 20.2,
+"kcal": 202
+}
+},
+"vit_e": {
+"median": 0.188,
+"n": 77,
+"top": {
+"fdc_id": 171707,
+"name": "Avocados, raw (Florida)",
+"short": "Avocados, raw",
+"group": "fruits",
+"page": "avocado",
+"serving": "1 fruit without skin and seeds",
+"g": 304.0,
+"amount": 8.086,
+"per100": 2.66,
+"dv": 53.9,
+"kcal": 365
+}
+},
+"vit_k": {
+"median": 3.042,
+"n": 77,
+"top": {
+"fdc_id": 169134,
+"name": "Pomegranates, raw",
+"short": "Pomegranates, raw",
+"group": "fruits",
+"page": "pomegranate",
+"serving": "1 pomegranate (4\" dia)",
+"g": 282.0,
+"amount": 46.248,
+"per100": 16.4,
+"dv": 38.5,
+"kcal": 234
+}
+},
+"b6": {
+"median": 0.062,
+"n": 93,
+"top": {
+"fdc_id": 171705,
+"name": "Avocados, raw (all commercial varieties)",
+"short": "Avocados, raw",
+"group": "fruits",
+"page": "avocado",
+"serving": "1 avocado, NS as to Florida or California",
+"g": 201.0,
+"amount": 0.517,
+"per100": 0.257,
+"dv": 30.4,
+"kcal": 322
+}
+},
+"folate": {
+"median": 10.19,
+"n": 92,
+"top": {
+"fdc_id": 171705,
+"name": "Avocados, raw (all commercial varieties)",
+"short": "Avocados, raw",
+"group": "fruits",
+"page": "avocado",
+"serving": "1 avocado, NS as to Florida or California",
+"g": 201.0,
+"amount": 162.81,
+"per100": 81.0,
+"dv": 40.7,
+"kcal": 322
+}
+},
+"omega3": {
+"median": 0.014,
+"n": 76,
+"top": {
+"fdc_id": 171707,
+"name": "Avocados, raw (Florida)",
+"short": "Avocados, raw",
+"group": "fruits",
+"page": "avocado",
+"serving": "1 fruit without skin and seeds",
+"g": 304.0,
+"amount": 0.292,
+"per100": 0.096,
+"dv": null,
+"kcal": 365
+}
+},
+"selenium": {
+"median": 0.17,
+"n": 82,
+"top": {
+"fdc_id": 169928,
+"name": "Peaches, yellow (raw)",
+"short": "Peaches, yellow",
+"group": "fruits",
+"page": "peach",
+"serving": "1 medium (2-2/3\" dia)",
+"g": 150.0,
+"amount": 3.15,
+"per100": 2.1,
+"dv": 5.7,
+"kcal": 58
+}
+},
+"copper": {
+"median": 0.078,
+"n": 92,
+"top": {
+"fdc_id": 171707,
+"name": "Avocados, raw (Florida)",
+"short": "Avocados, raw",
+"group": "fruits",
+"page": "avocado",
+"serving": "1 fruit without skin and seeds",
+"g": 304.0,
+"amount": 0.945,
+"per100": 0.311,
+"dv": 105.0,
+"kcal": 365
+}
+},
+"manganese": {
+"median": 0.076,
+"n": 91,
+"top": {
+"fdc_id": 173949,
+"name": "Blueberries, wild (frozen)",
+"short": "Blueberries, wild",
+"group": "fruits",
+"page": null,
+"serving": "1 cup, frozen",
+"g": 140.0,
+"amount": 4.018,
+"per100": 2.87,
+"dv": 174.7,
+"kcal": 80
+}
+},
+"phosphorus": {
+"median": 17.955,
+"n": 94,
+"top": {
+"fdc_id": 171707,
+"name": "Avocados, raw (Florida)",
+"short": "Avocados, raw",
+"group": "fruits",
+"page": "avocado",
+"serving": "1 fruit without skin and seeds",
+"g": 304.0,
+"amount": 121.6,
+"per100": 40.0,
+"dv": 9.7,
+"kcal": 365
+}
+},
+"choline": {
+"median": 8.456,
+"n": 75,
+"top": {
+"fdc_id": 171705,
+"name": "Avocados, raw (all commercial varieties)",
+"short": "Avocados, raw",
+"group": "fruits",
+"page": "avocado",
+"serving": "1 avocado, NS as to Florida or California",
+"g": 201.0,
+"amount": 28.542,
+"per100": 14.2,
+"dv": 5.2,
+"kcal": 322
+}
+},
+"thiamin": {
+"median": 0.037,
+"n": 93,
+"top": {
+"fdc_id": 169134,
+"name": "Pomegranates, raw",
+"short": "Pomegranates, raw",
+"group": "fruits",
+"page": "pomegranate",
+"serving": "1 pomegranate (4\" dia)",
+"g": 282.0,
+"amount": 0.189,
+"per100": 0.067,
+"dv": 15.7,
+"kcal": 234
+}
+},
+"riboflavin": {
+"median": 0.042,
+"n": 93,
+"top": {
+"fdc_id": 171705,
+"name": "Avocados, raw (all commercial varieties)",
+"short": "Avocados, raw",
+"group": "fruits",
+"page": "avocado",
+"serving": "1 avocado, NS as to Florida or California",
+"g": 201.0,
+"amount": 0.261,
+"per100": 0.13,
+"dv": 20.1,
+"kcal": 322
+}
+},
+"niacin": {
+"median": 0.316,
+"n": 93,
+"top": {
+"fdc_id": 171705,
+"name": "Avocados, raw (all commercial varieties)",
+"short": "Avocados, raw",
+"group": "fruits",
+"page": "avocado",
+"serving": "1 avocado, NS as to Florida or California",
+"g": 201.0,
+"amount": 3.493,
+"per100": 1.738,
+"dv": 21.8,
+"kcal": 322
+}
+},
+"lycopene": {
+"median": 0.0,
+"n": 76,
+"top": null
+},
+"lutein": {
+"median": 47.75,
+"n": 76,
+"top": {
+"fdc_id": 169941,
+"name": "Persimmons, japanese (raw)",
+"short": "Persimmons, japanese",
+"group": "fruits",
+"page": null,
+"serving": "1 fruit (2-1/2\" dia)",
+"g": 168.0,
+"amount": 1401.12,
+"per100": 834.0,
+"dv": null,
+"kcal": 118
+}
+},
+"beta_carotene": {
+"median": 50.145,
+"n": 80,
+"top": {
+"fdc_id": 169910,
+"name": "Mangos, raw",
+"short": "Mangos, raw",
+"group": "fruits",
+"page": "mango",
+"serving": "1 fruit without refuse",
+"g": 336.0,
+"amount": 2150.4,
+"per100": 640.0,
+"dv": null,
+"kcal": 202
+}
+},
+"caffeine": {
+"median": 0.0,
+"n": 62,
+"top": null
+},
+"mono": {
+"median": 0.029,
+"n": 78,
+"top": {
+"fdc_id": 171705,
+"name": "Avocados, raw (all commercial varieties)",
+"short": "Avocados, raw",
+"group": "fruits",
+"page": "avocado",
+"serving": "1 avocado, NS as to Florida or California",
+"g": 201.0,
+"amount": 19.696,
+"per100": 9.799,
+"dv": null,
+"kcal": 322
+}
+},
+"poly": {
+"median": 0.072,
+"n": 78,
+"top": {
+"fdc_id": 171707,
+"name": "Avocados, raw (Florida)",
+"short": "Avocados, raw",
+"group": "fruits",
+"page": "avocado",
+"serving": "1 fruit without skin and seeds",
+"g": 304.0,
+"amount": 5.095,
+"per100": 1.676,
+"dv": null,
+"kcal": 365
+}
+}
+},
+"sample": [
+"Apples",
+"Apricots",
+"Avocados",
+"Bananas",
+"Blackberries",
+"Blueberries",
+"Carambola",
+"Cherries",
+"Clementines",
+"Cranberries",
+"Currants",
+"Dates",
+"Figs",
+"Grapefruit",
+"Grapes",
+"Guavas",
+"Horned melon (kiwano)",
+"Kiwifruit",
+"Kumquats",
+"Lemons",
+"Limes",
+"Litchis",
+"Mangos",
+"Melons",
+"Naranjilla (lulo) pulp",
+"Nectarines",
+"Oranges",
+"Papayas",
+"Passion-fruit",
+"Peaches",
+"Pears",
+"Persimmons",
+"Pineapple",
+"Plantains",
+"Plums",
+"Pomegranates",
+"Raisins",
+"Raspberries",
+"Strawberries",
+"Sugar-apples"
+]
+},
+"vegetables": {
+"slug": "vegetables",
+"name": "Vegetables",
+"count": 243,
+"pages": [
+"spinach",
+"kale",
+"broccoli",
+"sweet-potato",
+"potato",
+"carrot",
+"tomato",
+"bell-pepper",
+"cucumber",
+"onion",
+"garlic",
+"mushrooms",
+"asparagus",
+"brussels-sprouts",
+"cauliflower",
+"cabbage",
+"zucchini",
+"beets",
+"celery",
+"romaine-lettuce",
+"swiss-chard",
+"collard-greens",
+"green-beans",
+"peas",
+"corn",
+"pumpkin",
+"butternut-squash",
+"artichoke"
+],
+"stats": {
+"potassium": {
+"median": 289.188,
+"n": 243,
+"top": {
+"fdc_id": 170376,
+"name": "Beet greens, cooked (boiled, drained, without salt)",
+"short": "Beet greens, cooked",
+"group": "vegetables",
+"page": null,
+"serving": "1 cup (1\" pieces)",
+"g": 144.0,
+"amount": 1308.96,
+"per100": 909.0,
+"dv": 27.9,
+"kcal": 39
+}
+},
+"magnesium": {
+"median": 21.6,
+"n": 242,
+"top": {
+"fdc_id": 168463,
+"name": "Spinach, cooked (boiled, drained, without salt)",
+"short": "Spinach, cooked",
+"group": "vegetables",
+"page": "spinach",
+"serving": "1 cup",
+"g": 180.0,
+"amount": 156.6,
+"per100": 87.0,
+"dv": 37.3,
+"kcal": 41
+}
+},
+"iron": {
+"median": 0.682,
+"n": 243,
+"top": {
+"fdc_id": 168463,
+"name": "Spinach, cooked (boiled, drained, without salt)",
+"short": "Spinach, cooked",
+"group": "vegetables",
+"page": "spinach",
+"serving": "1 cup",
+"g": 180.0,
+"amount": 6.426,
+"per100": 3.57,
+"dv": 35.7,
+"kcal": 41
+}
+},
+"protein": {
+"median": 2.011,
+"n": 243,
+"top": {
+"fdc_id": 169283,
+"name": "Soybeans, green (cooked, boiled, drained, without salt)",
+"short": "Soybeans, green",
+"group": "vegetables",
+"page": null,
+"serving": "1 cup",
+"g": 180.0,
+"amount": 22.23,
+"per100": 12.35,
+"dv": 44.5,
+"kcal": 254
+}
+},
+"fiber": {
+"median": 2.475,
+"n": 229,
+"top": {
+"fdc_id": 168411,
+"name": "Edamame, frozen (prepared)",
+"short": "Edamame, frozen",
+"group": "vegetables",
+"page": "edamame",
+"serving": "1 cup",
+"g": 155.0,
+"amount": 9.661,
+"per100": 6.233,
+"dv": 34.5,
+"kcal": 188
+}
+},
+"calcium": {
+"median": 29.48,
+"n": 243,
+"top": {
+"fdc_id": 170407,
+"name": "Collards, cooked (boiled, drained, without salt)",
+"short": "Collards, cooked",
+"group": "vegetables",
+"page": "collard-greens",
+"serving": "1 cup, chopped",
+"g": 190.0,
+"amount": 267.9,
+"per100": 141.0,
+"dv": 20.6,
+"kcal": 63
+}
+},
+"zinc": {
+"median": 0.347,
+"n": 242,
+"top": {
+"fdc_id": 168411,
+"name": "Edamame, frozen (prepared)",
+"short": "Edamame, frozen",
+"group": "vegetables",
+"page": "edamame",
+"serving": "1 cup",
+"g": 155.0,
+"amount": 2.178,
+"per100": 1.405,
+"dv": 19.8,
+"kcal": 188
+}
+},
+"vit_c": {
+"median": 12.894,
+"n": 240,
+"top": {
+"fdc_id": 169383,
+"name": "Peppers, sweet (yellow, raw)",
+"short": "Peppers, sweet",
+"group": "vegetables",
+"page": "bell-pepper",
+"serving": "1 pepper, large (3-3/4\" long, 3\" dia)",
+"g": 186.0,
+"amount": 258.168,
+"per100": 138.8,
+"dv": 286.9,
+"kcal": 50
+}
+},
+"vit_d": {
+"median": 0.0,
+"n": 239,
+"top": {
+"fdc_id": 168557,
+"name": "Mushrooms, brown (italian, or crimini, exposed to ultraviolet light, raw)",
+"short": "Mushrooms, brown",
+"group": "vegetables",
+"page": null,
+"serving": "1 cup whole",
+"g": 87.0,
+"amount": 27.753,
+"per100": 31.9,
+"dv": 138.8,
+"kcal": 19
+}
+},
+"b12": {
+"median": 0.0,
+"n": 235,
+"top": null
+},
+"vit_a": {
+"median": 19.62,
+"n": 225,
+"top": {
+"fdc_id": 168484,
+"name": "Sweet potato, cooked (boiled, without skin)",
+"short": "Sweet potato, cooked",
+"group": "vegetables",
+"page": "sweet-potato",
+"serving": "1 cup, mashed",
+"g": 328.0,
+"amount": 2581.36,
+"per100": 787.0,
+"dv": 286.8,
+"kcal": 249
+}
+},
+"vit_e": {
+"median": 0.269,
+"n": 198,
+"top": {
+"fdc_id": 168463,
+"name": "Spinach, cooked (boiled, drained, without salt)",
+"short": "Spinach, cooked",
+"group": "vegetables",
+"page": "spinach",
+"serving": "1 cup",
+"g": 180.0,
+"amount": 3.744,
+"per100": 2.08,
+"dv": 25.0,
+"kcal": 41
+}
+},
+"vit_k": {
+"median": 14.76,
+"n": 199,
+"top": {
+"fdc_id": 170416,
+"name": "Parsley, fresh",
+"short": "Parsley",
+"group": "vegetables",
+"page": null,
+"serving": "1 cup chopped",
+"g": 60.0,
+"amount": 984.0,
+"per100": 1640.0,
+"dv": 820.0,
+"kcal": 22
+}
+},
+"b6": {
+"median": 0.14,
+"n": 242,
+"top": {
+"fdc_id": 169230,
+"name": "Garlic, raw",
+"short": "Garlic, raw",
+"group": "vegetables",
+"page": "garlic",
+"serving": "1 cup",
+"g": 136.0,
+"amount": 1.68,
+"per100": 1.235,
+"dv": 98.8,
+"kcal": 203
+}
+},
+"folate": {
+"median": 33.093,
+"n": 243,
+"top": {
+"fdc_id": 168490,
+"name": "Arrowroot, raw",
+"short": "Arrowroot, raw",
+"group": "vegetables",
+"page": null,
+"serving": "1 cup, sliced",
+"g": 120.0,
+"amount": 405.6,
+"per100": 338.0,
+"dv": 101.4,
+"kcal": 78
+}
+},
+"omega3": {
+"median": 0.029,
+"n": 225,
+"top": {
+"fdc_id": 168411,
+"name": "Edamame, frozen (prepared)",
+"short": "Edamame, frozen",
+"group": "vegetables",
+"page": "edamame",
+"serving": "1 cup",
+"g": 155.0,
+"amount": 0.913,
+"per100": 0.589,
+"dv": null,
+"kcal": 188
+}
+},
+"selenium": {
+"median": 0.673,
+"n": 238,
+"top": {
+"fdc_id": 168437,
+"name": "Mushrooms, shiitake (cooked, without salt)",
+"short": "Mushrooms, shiitake",
+"group": "vegetables",
+"page": "mushrooms",
+"serving": "1 cup pieces",
+"g": 145.0,
+"amount": 35.96,
+"per100": 24.8,
+"dv": 65.4,
+"kcal": 81
+}
+},
+"copper": {
+"median": 0.089,
+"n": 242,
+"top": {
+"fdc_id": 168437,
+"name": "Mushrooms, shiitake (cooked, without salt)",
+"short": "Mushrooms, shiitake",
+"group": "vegetables",
+"page": "mushrooms",
+"serving": "1 cup pieces",
+"g": 145.0,
+"amount": 1.299,
+"per100": 0.896,
+"dv": 144.4,
+"kcal": 81
+}
+},
+"manganese": {
+"median": 0.211,
+"n": 239,
+"top": {
+"fdc_id": 169230,
+"name": "Garlic, raw",
+"short": "Garlic, raw",
+"group": "vegetables",
+"page": "garlic",
+"serving": "1 cup",
+"g": 136.0,
+"amount": 2.274,
+"per100": 1.672,
+"dv": 98.9,
+"kcal": 203
+}
+},
+"phosphorus": {
+"median": 46.41,
+"n": 243,
+"top": {
+"fdc_id": 168411,
+"name": "Edamame, frozen (prepared)",
+"short": "Edamame, frozen",
+"group": "vegetables",
+"page": "edamame",
+"serving": "1 cup",
+"g": 155.0,
+"amount": 303.955,
+"per100": 196.1,
+"dv": 24.3,
+"kcal": 188
+}
+},
+"choline": {
+"median": 15.545,
+"n": 186,
+"top": {
+"fdc_id": 170492,
+"name": "Corn pudding, home prepared",
+"short": "Corn pudding, home prepared",
+"group": "vegetables",
+"page": null,
+"serving": "1 cup",
+"g": 250.0,
+"amount": 138.75,
+"per100": 55.5,
+"dv": 25.2,
+"kcal": 328
+}
+},
+"thiamin": {
+"median": 0.076,
+"n": 243,
+"top": {
+"fdc_id": 170025,
+"name": "Pigeonpeas, immature seeds (raw)",
+"short": "Pigeonpeas, immature seeds",
+"group": "vegetables",
+"page": null,
+"serving": "1 cup",
+"g": 154.0,
+"amount": 0.616,
+"per100": 0.4,
+"dv": 51.3,
+"kcal": 209
+}
+},
+"riboflavin": {
+"median": 0.078,
+"n": 243,
+"top": {
+"fdc_id": 169243,
+"name": "Mushrooms, portabella (grilled)",
+"short": "Mushrooms, portabella",
+"group": "vegetables",
+"page": "mushrooms",
+"serving": "1 cup sliced",
+"g": 121.0,
+"amount": 0.563,
+"per100": 0.465,
+"dv": 43.3,
+"kcal": 35
+}
+},
+"niacin": {
+"median": 0.767,
+"n": 243,
+"top": {
+"fdc_id": 169377,
+"name": "Mushrooms, portabella (exposed to ultraviolet light, grilled)",
+"short": "Mushrooms, portabella",
+"group": "vegetables",
+"page": null,
+"serving": "1 cup sliced",
+"g": 121.0,
+"amount": 7.569,
+"per100": 6.255,
+"dv": 47.3,
+"kcal": 35
+}
+},
+"lycopene": {
+"median": 0.0,
+"n": 193,
+"top": null
+},
+"lutein": {
+"median": 292.81,
+"n": 191,
+"top": {
+"fdc_id": 168463,
+"name": "Spinach, cooked (boiled, drained, without salt)",
+"short": "Spinach, cooked",
+"group": "vegetables",
+"page": "spinach",
+"serving": "1 cup",
+"g": 180.0,
+"amount": 20354.4,
+"per100": 11308.0,
+"dv": null,
+"kcal": 41
+}
+},
+"beta_carotene": {
+"median": 223.2,
+"n": 197,
+"top": {
+"fdc_id": 168484,
+"name": "Sweet potato, cooked (boiled, without skin)",
+"short": "Sweet potato, cooked",
+"group": "vegetables",
+"page": "sweet-potato",
+"serving": "1 cup, mashed",
+"g": 328.0,
+"amount": 30976.32,
+"per100": 9444.0,
+"dv": null,
+"kcal": 249
+}
+},
+"caffeine": {
+"median": 0.0,
+"n": 193,
+"top": null
+},
+"mono": {
+"median": 0.022,
+"n": 229,
+"top": {
+"fdc_id": 170048,
+"name": "Potato puffs, frozen (oven-heated)",
+"short": "Potato puffs, frozen",
+"group": "vegetables",
+"page": null,
+"serving": "1 cup",
+"g": 128.0,
+"amount": 5.816,
+"per100": 4.544,
+"dv": null,
+"kcal": 246
+}
+},
+"poly": {
+"median": 0.124,
+"n": 229,
+"top": {
+"fdc_id": 170024,
+"name": "Peppers, sweet (green, sauteed)",
+"short": "Peppers, sweet",
+"group": "vegetables",
+"page": null,
+"serving": "1 cup chopped",
+"g": 115.0,
+"amount": 6.785,
+"per100": 5.9,
+"dv": null,
+"kcal": 133
+}
+}
+},
+"sample": [
+"Alfalfa seeds",
+"Arrowroot",
+"Artichokes",
+"Asparagus",
+"Bamboo shoots",
+"Beans",
+"Beet greens",
+"Beets",
+"Broadbeans",
+"Broccoli",
+"Broccoli raab",
+"Brussels sprouts",
+"Butterbur",
+"Cabbage",
+"Carrots",
+"Cauliflower",
+"Celeriac",
+"Celery",
+"Chard",
+"Collards",
+"Corn",
+"Corn pudding",
+"Cornsalad",
+"Cowpeas",
+"Cress",
+"Cucumber",
+"Dandelion greens",
+"Edamame",
+"Eggplant",
+"Endive",
+"Eppaw",
+"Escarole",
+"Fennel",
+"Garlic",
+"Gourd",
+"Kale",
+"Leeks",
+"Lentils",
+"Lettuce",
+"Lima beans"
+]
+},
+"legumes": {
+"slug": "legumes",
+"name": "Legumes",
+"count": 69,
+"pages": [
+"edamame",
+"lentils",
+"chickpeas",
+"black-beans",
+"kidney-beans",
+"pinto-beans",
+"soybeans",
+"tofu",
+"tempeh",
+"peanuts",
+"peanut-butter",
+"hummus",
+"soy-milk"
+],
+"stats": {
+"potassium": {
+"median": 395.46,
+"n": 69,
+"top": {
+"fdc_id": 173728,
+"name": "Beans, adzuki (mature seeds, cooked, boiled, without salt)",
+"short": "Beans, adzuki",
+"group": "legumes",
+"page": null,
+"serving": "1 cup",
+"g": 230.0,
+"amount": 1223.6,
+"per100": 532.0,
+"dv": 26.0,
+"kcal": 294
+}
+},
+"magnesium": {
+"median": 67.08,
+"n": 68,
+"top": {
+"fdc_id": 174271,
+"name": "Soybeans, mature cooked (boiled, without salt)",
+"short": "Soybeans",
+"group": "legumes",
+"page": "soybeans",
+"serving": "1 cup",
+"g": 172.0,
+"amount": 147.92,
+"per100": 86.0,
+"dv": 35.2,
+"kcal": 296
+}
+},
+"iron": {
+"median": 2.534,
+"n": 69,
+"top": {
+"fdc_id": 174271,
+"name": "Soybeans, mature cooked (boiled, without salt)",
+"short": "Soybeans",
+"group": "legumes",
+"page": "soybeans",
+"serving": "1 cup",
+"g": 172.0,
+"amount": 8.841,
+"per100": 5.14,
+"dv": 49.1,
+"kcal": 296
+}
+},
+"protein": {
+"median": 11.808,
+"n": 69,
+"top": {
+"fdc_id": 174272,
+"name": "Tempeh",
+"short": "Tempeh",
+"group": "legumes",
+"page": "tempeh",
+"serving": "1 cup",
+"g": 166.0,
+"amount": 33.681,
+"per100": 20.29,
+"dv": 67.4,
+"kcal": 319
+}
+},
+"fiber": {
+"median": 9.069,
+"n": 66,
+"top": {
+"fdc_id": 173746,
+"name": "Beans, navy (mature seeds, cooked, boiled, without salt)",
+"short": "Beans, navy",
+"group": "legumes",
+"page": null,
+"serving": "1 cup",
+"g": 182.0,
+"amount": 19.11,
+"per100": 10.5,
+"dv": 68.2,
+"kcal": 255
+}
+},
+"calcium": {
+"median": 78.66,
+"n": 69,
+"top": {
+"fdc_id": 172475,
+"name": "Tofu, raw (firm, prepared with calcium sulfate)",
+"short": "Tofu, raw",
+"group": "legumes",
+"page": "tofu",
+"serving": "0.5 cup",
+"g": 126.0,
+"amount": 860.58,
+"per100": 683.0,
+"dv": 66.2,
+"kcal": 181
+}
+},
+"zinc": {
+"median": 1.503,
+"n": 68,
+"top": {
+"fdc_id": 169884,
+"name": "Vermicelli, made from soy",
+"short": "Vermicelli, made from soy",
+"group": "legumes",
+"page": null,
+"serving": "1 cup",
+"g": 140.0,
+"amount": 5.936,
+"per100": 4.24,
+"dv": 54.0,
+"kcal": 463
+}
+},
+"vit_c": {
+"median": 0.152,
+"n": 65,
+"top": {
+"fdc_id": 175238,
+"name": "Beans, black (mature seeds, canned, low sodium)",
+"short": "Beans, black",
+"group": "legumes",
+"page": null,
+"serving": "1 cup",
+"g": 240.0,
+"amount": 6.48,
+"per100": 2.7,
+"dv": 7.2,
+"kcal": 218
+}
+},
+"vit_d": {
+"median": 0.0,
+"n": 67,
+"top": null
+},
+"b12": {
+"median": 0.0,
+"n": 67,
+"top": null
+},
+"vit_a": {
+"median": 0.0,
+"n": 59,
+"top": {
+"fdc_id": 175216,
+"name": "Soymilk (all flavors), nonfat (with added calcium, vitamins A and D)",
+"short": "Soymilk (all flavors), nonfat",
+"group": "legumes",
+"page": null,
+"serving": "1 cup",
+"g": 243.0,
+"amount": 148.23,
+"per100": 61.0,
+"dv": 16.5,
+"kcal": 68
+}
+},
+"vit_e": {
+"median": 1.32,
+"n": 43,
+"top": {
+"fdc_id": 172471,
+"name": "Peanut butter with omega-3, creamy",
+"short": "Peanut butter with omega-3, creamy",
+"group": "legumes",
+"page": null,
+"serving": "2 tbsp",
+"g": 32.0,
+"amount": 3.309,
+"per100": 10.34,
+"dv": 22.1,
+"kcal": 195
+}
+},
+"vit_k": {
+"median": 5.04,
+"n": 44,
+"top": {
+"fdc_id": 174271,
+"name": "Soybeans, mature cooked (boiled, without salt)",
+"short": "Soybeans",
+"group": "legumes",
+"page": "soybeans",
+"serving": "1 cup",
+"g": 172.0,
+"amount": 33.024,
+"per100": 19.2,
+"dv": 27.5,
+"kcal": 296
+}
+},
+"b6": {
+"median": 0.134,
+"n": 65,
+"top": {
+"fdc_id": 175250,
+"name": "Chickpeas (garbanzo beans, bengal gram) (mature seeds, canned, solids and liquids, low sodium)",
+"short": "Chickpeas (garbanzo beans, bengal gram)",
+"group": "legumes",
+"page": null,
+"serving": "1 cup",
+"g": 240.0,
+"amount": 1.135,
+"per100": 0.473,
+"dv": 66.8,
+"kcal": 211
+}
+},
+"folate": {
+"median": 68.04,
+"n": 67,
+"top": {
+"fdc_id": 173736,
+"name": "Beans, cranberry (roman) (mature seeds, cooked, boiled, without salt)",
+"short": "Beans, cranberry (roman)",
+"group": "legumes",
+"page": null,
+"serving": "1 cup",
+"g": 177.0,
+"amount": 366.39,
+"per100": 207.0,
+"dv": 91.6,
+"kcal": 241
+}
+},
+"omega3": {
+"median": 0.137,
+"n": 63,
+"top": {
+"fdc_id": 174271,
+"name": "Soybeans, mature cooked (boiled, without salt)",
+"short": "Soybeans",
+"group": "legumes",
+"page": "soybeans",
+"serving": "1 cup",
+"g": 172.0,
+"amount": 1.029,
+"per100": 0.598,
+"dv": null,
+"kcal": 296
+}
+},
+"selenium": {
+"median": 4.756,
+"n": 62,
+"top": {
+"fdc_id": 169884,
+"name": "Vermicelli, made from soy",
+"short": "Vermicelli, made from soy",
+"group": "legumes",
+"page": null,
+"serving": "1 cup",
+"g": 140.0,
+"amount": 37.8,
+"per100": 27.0,
+"dv": 68.7,
+"kcal": 463
+}
+},
+"copper": {
+"median": 0.36,
+"n": 66,
+"top": {
+"fdc_id": 169884,
+"name": "Vermicelli, made from soy",
+"short": "Vermicelli, made from soy",
+"group": "legumes",
+"page": null,
+"serving": "1 cup",
+"g": 140.0,
+"amount": 2.682,
+"per100": 1.916,
+"dv": 298.0,
+"kcal": 463
+}
+},
+"manganese": {
+"median": 0.749,
+"n": 62,
+"top": {
+"fdc_id": 174272,
+"name": "Tempeh",
+"short": "Tempeh",
+"group": "legumes",
+"page": "tempeh",
+"serving": "1 cup",
+"g": 166.0,
+"amount": 2.158,
+"per100": 1.3,
+"dv": 93.8,
+"kcal": 319
+}
+},
+"phosphorus": {
+"median": 193.02,
+"n": 66,
+"top": {
+"fdc_id": 174272,
+"name": "Tempeh",
+"short": "Tempeh",
+"group": "legumes",
+"page": "tempeh",
+"serving": "1 cup",
+"g": 166.0,
+"amount": 441.56,
+"per100": 266.0,
+"dv": 35.3,
+"kcal": 319
+}
+},
+"choline": {
+"median": 55.56,
+"n": 40,
+"top": {
+"fdc_id": 169884,
+"name": "Vermicelli, made from soy",
+"short": "Vermicelli, made from soy",
+"group": "legumes",
+"page": null,
+"serving": "1 cup",
+"g": 140.0,
+"amount": 247.8,
+"per100": 177.0,
+"dv": 45.1,
+"kcal": 463
+}
+},
+"thiamin": {
+"median": 0.139,
+"n": 68,
+"top": {
+"fdc_id": 175198,
+"name": "Beans, pink (mature seeds, cooked, boiled, without salt)",
+"short": "Beans, pink",
+"group": "legumes",
+"page": null,
+"serving": "1 cup",
+"g": 169.0,
+"amount": 0.434,
+"per100": 0.257,
+"dv": 36.2,
+"kcal": 252
+}
+},
+"riboflavin": {
+"median": 0.098,
+"n": 68,
+"top": {
+"fdc_id": 174272,
+"name": "Tempeh",
+"short": "Tempeh",
+"group": "legumes",
+"page": "tempeh",
+"serving": "1 cup",
+"g": 166.0,
+"amount": 0.594,
+"per100": 0.358,
+"dv": 45.7,
+"kcal": 319
+}
+},
+"niacin": {
+"median": 1.099,
+"n": 66,
+"top": {
+"fdc_id": 172457,
+"name": "Peanut spread, reduced sugar",
+"short": "Peanut spread, reduced sugar",
+"group": "legumes",
+"page": null,
+"serving": "2 tbsp",
+"g": 31.0,
+"amount": 5.079,
+"per100": 16.385,
+"dv": 31.7,
+"kcal": 202
+}
+},
+"lycopene": {
+"median": 0.0,
+"n": 42,
+"top": null
+},
+"lutein": {
+"median": 0.0,
+"n": 42,
+"top": null
+},
+"beta_carotene": {
+"median": 0.0,
+"n": 43,
+"top": {
+"fdc_id": 172427,
+"name": "Mungo beans, mature seeds (cooked, boiled, without salt)",
+"short": "Mungo beans",
+"group": "legumes",
+"page": null,
+"serving": "1 cup",
+"g": 180.0,
+"amount": 34.2,
+"per100": 19.0,
+"dv": null,
+"kcal": 189
+}
+},
+"caffeine": {
+"median": 0.0,
+"n": 44,
+"top": null
+},
+"mono": {
+"median": 0.612,
+"n": 68,
+"top": {
+"fdc_id": 172471,
+"name": "Peanut butter with omega-3, creamy",
+"short": "Peanut butter with omega-3, creamy",
+"group": "legumes",
+"page": null,
+"serving": "2 tbsp",
+"g": 32.0,
+"amount": 11.716,
+"per100": 36.614,
+"dv": null,
+"kcal": 195
+}
+},
+"poly": {
+"median": 0.947,
+"n": 68,
+"top": {
+"fdc_id": 174271,
+"name": "Soybeans, mature cooked (boiled, without salt)",
+"short": "Soybeans",
+"group": "legumes",
+"page": "soybeans",
+"serving": "1 cup",
+"g": 172.0,
+"amount": 8.71,
+"per100": 5.064,
+"dv": null,
+"kcal": 296
+}
+}
+},
+"sample": [
+"Beans",
+"Broadbeans (fava beans)",
+"Chickpeas (garbanzo beans",
+"Cowpeas",
+"Hummus",
+"Lentils",
+"Lima beans",
+"Mung beans",
+"Mungo beans",
+"Okara",
+"Peanut butter",
+"Peanut butter with omega-3",
+"Peanut spread",
+"Peanuts",
+"Peas",
+"Pigeon peas (red gram)",
+"Soybeans",
+"Soymilk",
+"Soymilk (all flavors)",
+"Tempeh",
+"Tofu",
+"Vermicelli",
+"Vitasoy usa"
+]
+},
+"nuts-seeds": {
+"slug": "nuts-seeds",
+"name": "Nuts & seeds",
+"count": 65,
+"pages": [
+"almonds",
+"walnuts",
+"cashews",
+"pistachios",
+"pecans",
+"brazil-nuts",
+"hazelnuts",
+"macadamia-nuts",
+"chia-seeds",
+"flaxseed",
+"pumpkin-seeds",
+"sunflower-seeds",
+"sesame-seeds",
+"hemp-seeds"
+],
+"stats": {
+"potassium": {
+"median": 167.832,
+"n": 65,
+"top": {
+"fdc_id": 170148,
+"name": "Seeds, hemp seed (hulled)",
+"short": "Seeds, hemp seed",
+"group": "nuts-seeds",
+"page": "hemp-seeds",
+"serving": "1 oz",
+"g": 28.35,
+"amount": 340.2,
+"per100": 1200.0,
+"dv": 7.2,
+"kcal": 157
+}
+},
+"magnesium": {
+"median": 45.36,
+"n": 65,
+"top": {
+"fdc_id": 170148,
+"name": "Seeds, hemp seed (hulled)",
+"short": "Seeds, hemp seed",
+"group": "nuts-seeds",
+"page": "hemp-seeds",
+"serving": "1 oz",
+"g": 28.35,
+"amount": 198.45,
+"per100": 700.0,
+"dv": 47.2,
+"kcal": 157
+}
+},
+"iron": {
+"median": 0.958,
+"n": 65,
+"top": {
+"fdc_id": 170151,
+"name": "Seeds, sesame seeds (whole, roasted and toasted)",
+"short": "Seeds, sesame seeds",
+"group": "nuts-seeds",
+"page": null,
+"serving": "1 oz",
+"g": 28.35,
+"amount": 4.184,
+"per100": 14.76,
+"dv": 23.2,
+"kcal": 160
+}
+},
+"protein": {
+"median": 4.452,
+"n": 65,
+"top": {
+"fdc_id": 170148,
+"name": "Seeds, hemp seed (hulled)",
+"short": "Seeds, hemp seed",
+"group": "nuts-seeds",
+"page": "hemp-seeds",
+"serving": "1 oz",
+"g": 28.35,
+"amount": 8.947,
+"per100": 31.56,
+"dv": 17.9,
+"kcal": 157
+}
+},
+"fiber": {
+"median": 2.604,
+"n": 51,
+"top": {
+"fdc_id": 170554,
+"name": "Seeds, chia seeds (dried)",
+"short": "Seeds, chia seeds",
+"group": "nuts-seeds",
+"page": "chia-seeds",
+"serving": "1 oz",
+"g": 28.35,
+"amount": 9.752,
+"per100": 34.4,
+"dv": 34.8,
+"kcal": 138
+}
+},
+"calcium": {
+"median": 19.845,
+"n": 65,
+"top": {
+"fdc_id": 170151,
+"name": "Seeds, sesame seeds (whole, roasted and toasted)",
+"short": "Seeds, sesame seeds",
+"group": "nuts-seeds",
+"page": null,
+"serving": "1 oz",
+"g": 28.35,
+"amount": 280.382,
+"per100": 989.0,
+"dv": 21.6,
+"kcal": 160
+}
+},
+"zinc": {
+"median": 0.953,
+"n": 65,
+"top": {
+"fdc_id": 169406,
+"name": "Seeds, sesame butter (tahini, from unroasted kernels (non-chemically removed seed coat))",
+"short": "Seeds, sesame butter",
+"group": "nuts-seeds",
+"page": null,
+"serving": "2 tbsp",
+"g": 28.0,
+"amount": 2.926,
+"per100": 10.45,
+"dv": 26.6,
+"kcal": 170
+}
+},
+"vit_c": {
+"median": 0.34,
+"n": 65,
+"top": {
+"fdc_id": 169408,
+"name": "Nuts, chestnuts (japanese, dried)",
+"short": "Nuts, chestnuts",
+"group": "nuts-seeds",
+"page": null,
+"serving": "1 oz",
+"g": 28.35,
+"amount": 17.379,
+"per100": 61.3,
+"dv": 19.3,
+"kcal": 102
+}
+},
+"vit_d": {
+"median": 0.0,
+"n": 62,
+"top": null
+},
+"b12": {
+"median": 0.0,
+"n": 64,
+"top": null
+},
+"vit_a": {
+"median": 0.284,
+"n": 63,
+"top": {
+"fdc_id": 170184,
+"name": "Nuts, pistachio nuts (raw)",
+"short": "Nuts, pistachio nuts",
+"group": "nuts-seeds",
+"page": "pistachios",
+"serving": "1 oz (49 kernels)",
+"g": 28.35,
+"amount": 7.371,
+"per100": 26.0,
+"dv": 0.8,
+"kcal": 159
+}
+},
+"vit_e": {
+"median": 0.615,
+"n": 39,
+"top": {
+"fdc_id": 170564,
+"name": "Seeds, sunflower seed kernels (oil roasted, without salt)",
+"short": "Seeds, sunflower seed kernels",
+"group": "nuts-seeds",
+"page": null,
+"serving": "1 oz",
+"g": 28.35,
+"amount": 10.3,
+"per100": 36.33,
+"dv": 68.7,
+"kcal": 168
+}
+},
+"vit_k": {
+"median": 0.765,
+"n": 30,
+"top": {
+"fdc_id": 170572,
+"name": "Nuts, cashew nuts (oil roasted, without salt added)",
+"short": "Nuts, cashew nuts",
+"group": "nuts-seeds",
+"page": null,
+"serving": "1 oz (18 kernels)",
+"g": 28.35,
+"amount": 9.837,
+"per100": 34.7,
+"dv": 8.2,
+"kcal": 164
+}
+},
+"b6": {
+"median": 0.095,
+"n": 64,
+"top": {
+"fdc_id": 170184,
+"name": "Nuts, pistachio nuts (raw)",
+"short": "Nuts, pistachio nuts",
+"group": "nuts-seeds",
+"page": "pistachios",
+"serving": "1 oz (49 kernels)",
+"g": 28.35,
+"amount": 0.482,
+"per100": 1.7,
+"dv": 28.3,
+"kcal": 159
+}
+},
+"folate": {
+"median": 16.443,
+"n": 65,
+"top": {
+"fdc_id": 170155,
+"name": "Seeds, sunflower seed butter (without salt)",
+"short": "Seeds, sunflower seed butter",
+"group": "nuts-seeds",
+"page": null,
+"serving": "2 tbsp",
+"g": 32.0,
+"amount": 75.84,
+"per100": 237.0,
+"dv": 19.0,
+"kcal": 197
+}
+},
+"omega3": {
+"median": 0.027,
+"n": 62,
+"top": {
+"fdc_id": 169414,
+"name": "Seeds, flaxseed",
+"short": "Seeds, flaxseed",
+"group": "nuts-seeds",
+"page": "flaxseed",
+"serving": "1 oz",
+"g": 28.35,
+"amount": 5.506,
+"per100": 19.42,
+"dv": null,
+"kcal": 151
+}
+},
+"selenium": {
+"median": 3.317,
+"n": 41,
+"top": {
+"fdc_id": 170569,
+"name": "Nuts, brazilnuts (dried, unblanched)",
+"short": "Nuts, brazilnuts",
+"group": "nuts-seeds",
+"page": "brazil-nuts",
+"serving": "1 oz (6 kernels)",
+"g": 28.35,
+"amount": 543.47,
+"per100": 1917.0,
+"dv": 988.1,
+"kcal": 187
+}
+},
+"copper": {
+"median": 0.331,
+"n": 65,
+"top": {
+"fdc_id": 170150,
+"name": "Seeds, sesame seeds (whole, dried)",
+"short": "Seeds, sesame seeds",
+"group": "nuts-seeds",
+"page": "sesame-seeds",
+"serving": "1 oz",
+"g": 28.35,
+"amount": 1.157,
+"per100": 4.082,
+"dv": 128.6,
+"kcal": 162
+}
+},
+"manganese": {
+"median": 0.599,
+"n": 65,
+"top": {
+"fdc_id": 170582,
+"name": "Nuts, hazelnuts or filberts (blanched)",
+"short": "Nuts, hazelnuts or filberts",
+"group": "nuts-seeds",
+"page": null,
+"serving": "1 oz",
+"g": 28.35,
+"amount": 3.586,
+"per100": 12.65,
+"dv": 155.9,
+"kcal": 178
+}
+},
+"phosphorus": {
+"median": 129.276,
+"n": 65,
+"top": {
+"fdc_id": 170148,
+"name": "Seeds, hemp seed (hulled)",
+"short": "Seeds, hemp seed",
+"group": "nuts-seeds",
+"page": "hemp-seeds",
+"serving": "1 oz",
+"g": 28.35,
+"amount": 467.775,
+"per100": 1650.0,
+"dv": 37.4,
+"kcal": 157
+}
+},
+"choline": {
+"median": 14.77,
+"n": 29,
+"top": {
+"fdc_id": 169414,
+"name": "Seeds, flaxseed",
+"short": "Seeds, flaxseed",
+"group": "nuts-seeds",
+"page": "flaxseed",
+"serving": "1 oz",
+"g": 28.35,
+"amount": 22.311,
+"per100": 78.7,
+"dv": 4.1,
+"kcal": 151
+}
+},
+"thiamin": {
+"median": 0.098,
+"n": 65,
+"top": {
+"fdc_id": 169406,
+"name": "Seeds, sesame butter (tahini, from unroasted kernels (non-chemically removed seed coat))",
+"short": "Seeds, sesame butter",
+"group": "nuts-seeds",
+"page": null,
+"serving": "2 tbsp",
+"g": 28.0,
+"amount": 0.444,
+"per100": 1.587,
+"dv": 37.0,
+"kcal": 170
+}
+},
+"riboflavin": {
+"median": 0.049,
+"n": 64,
+"top": {
+"fdc_id": 170158,
+"name": "Nuts, almonds (dry roasted, without salt added)",
+"short": "Nuts, almonds",
+"group": "nuts-seeds",
+"page": null,
+"serving": "1 oz (22 whole kernels)",
+"g": 28.35,
+"amount": 0.339,
+"per100": 1.197,
+"dv": 26.1,
+"kcal": 170
+}
+},
+"niacin": {
+"median": 0.512,
+"n": 65,
+"top": {
+"fdc_id": 170148,
+"name": "Seeds, hemp seed (hulled)",
+"short": "Seeds, hemp seed",
+"group": "nuts-seeds",
+"page": "hemp-seeds",
+"serving": "1 oz",
+"g": 28.35,
+"amount": 2.608,
+"per100": 9.2,
+"dv": 16.3,
+"kcal": 157
+}
+},
+"lycopene": {
+"median": 0.0,
+"n": 30,
+"top": null
+},
+"lutein": {
+"median": 2.268,
+"n": 31,
+"top": {
+"fdc_id": 170184,
+"name": "Nuts, pistachio nuts (raw)",
+"short": "Nuts, pistachio nuts",
+"group": "nuts-seeds",
+"page": "pistachios",
+"serving": "1 oz (49 kernels)",
+"g": 28.35,
+"amount": 823.0,
+"per100": 2903.0,
+"dv": null,
+"kcal": 159
+}
+},
+"beta_carotene": {
+"median": 1.701,
+"n": 36,
+"top": {
+"fdc_id": 170184,
+"name": "Nuts, pistachio nuts (raw)",
+"short": "Nuts, pistachio nuts",
+"group": "nuts-seeds",
+"page": "pistachios",
+"serving": "1 oz (49 kernels)",
+"g": 28.35,
+"amount": 86.468,
+"per100": 305.0,
+"dv": null,
+"kcal": 159
+}
+},
+"caffeine": {
+"median": 0.0,
+"n": 28,
+"top": null
+},
+"mono": {
+"median": 5.32,
+"n": 65,
+"top": {
+"fdc_id": 170179,
+"name": "Nuts, macadamia nuts (dry roasted, without salt added)",
+"short": "Nuts, macadamia nuts",
+"group": "nuts-seeds",
+"page": null,
+"serving": "1 oz (10-12 kernels)",
+"g": 28.35,
+"amount": 16.804,
+"per100": 59.275,
+"dv": null,
+"kcal": 204
+}
+},
+"poly": {
+"median": 3.246,
+"n": 65,
+"top": {
+"fdc_id": 170187,
+"name": "Nuts, walnuts (english)",
+"short": "Nuts, walnuts",
+"group": "nuts-seeds",
+"page": "walnuts",
+"serving": "1 oz (14 halves)",
+"g": 28.35,
+"amount": 13.985,
+"per100": 49.331,
+"dv": null,
+"kcal": 185
+}
+}
+},
+"sample": [
+"Nuts",
+"Seeds"
+]
+},
+"grains": {
+"slug": "grains",
+"name": "Grains",
+"count": 20,
+"pages": [
+"oats",
+"quinoa",
+"brown-rice",
+"white-rice",
+"whole-wheat-bread",
+"white-bread",
+"pasta",
+"barley",
+"buckwheat",
+"popcorn"
+],
+"stats": {
+"potassium": {
+"median": 134.885,
+"n": 20,
+"top": {
+"fdc_id": 168917,
+"name": "Quinoa, cooked",
+"short": "Quinoa, cooked",
+"group": "grains",
+"page": "quinoa",
+"serving": "1 cup",
+"g": 185.0,
+"amount": 318.2,
+"per100": 172.0,
+"dv": 6.8,
+"kcal": 222
+}
+},
+"magnesium": {
+"median": 69.87,
+"n": 20,
+"top": {
+"fdc_id": 168918,
+"name": "Teff, cooked",
+"short": "Teff, cooked",
+"group": "grains",
+"page": null,
+"serving": "1 cup",
+"g": 252.0,
+"amount": 126.0,
+"per100": 50.0,
+"dv": 30.0,
+"kcal": 255
+}
+},
+"iron": {
+"median": 1.238,
+"n": 20,
+"top": {
+"fdc_id": 168918,
+"name": "Teff, cooked",
+"short": "Teff, cooked",
+"group": "grains",
+"page": null,
+"serving": "1 cup",
+"g": 252.0,
+"amount": 5.166,
+"per100": 2.05,
+"dv": 28.7,
+"kcal": 255
+}
+},
+"protein": {
+"median": 6.029,
+"n": 20,
+"top": {
+"fdc_id": 169746,
+"name": "Spelt, cooked",
+"short": "Spelt, cooked",
+"group": "grains",
+"page": null,
+"serving": "1 cup",
+"g": 194.0,
+"amount": 10.67,
+"per100": 5.5,
+"dv": 21.3,
+"kcal": 246
+}
+},
+"fiber": {
+"median": 4.563,
+"n": 17,
+"top": {
+"fdc_id": 170287,
+"name": "Bulgur, cooked",
+"short": "Bulgur, cooked",
+"group": "grains",
+"page": null,
+"serving": "1 cup",
+"g": 182.0,
+"amount": 8.19,
+"per100": 4.5,
+"dv": 29.2,
+"kcal": 151
+}
+},
+"calcium": {
+"median": 14.645,
+"n": 20,
+"top": {
+"fdc_id": 168918,
+"name": "Teff, cooked",
+"short": "Teff, cooked",
+"group": "grains",
+"page": null,
+"serving": "1 cup",
+"g": 252.0,
+"amount": 123.48,
+"per100": 49.0,
+"dv": 9.5,
+"kcal": 255
+}
+},
+"zinc": {
+"median": 1.361,
+"n": 20,
+"top": {
+"fdc_id": 169744,
+"name": "Wheat, KAMUT khorasan (cooked)",
+"short": "Wheat, KAMUT khorasan",
+"group": "grains",
+"page": null,
+"serving": "1 cup",
+"g": 172.0,
+"amount": 3.165,
+"per100": 1.84,
+"dv": 28.8,
+"kcal": 227
+}
+},
+"vit_c": {
+"median": 0.0,
+"n": 17,
+"top": null
+},
+"vit_d": {
+"median": 0.0,
+"n": 15,
+"top": null
+},
+"b12": {
+"median": 0.0,
+"n": 19,
+"top": null
+},
+"vit_a": {
+"median": 0.0,
+"n": 18,
+"top": null
+},
+"vit_e": {
+"median": 0.237,
+"n": 14,
+"top": {
+"fdc_id": 168917,
+"name": "Quinoa, cooked",
+"short": "Quinoa, cooked",
+"group": "grains",
+"page": "quinoa",
+"serving": "1 cup",
+"g": 185.0,
+"amount": 1.165,
+"per100": 0.63,
+"dv": 7.8,
+"kcal": 222
+}
+},
+"vit_k": {
+"median": 0.661,
+"n": 12,
+"top": {
+"fdc_id": 170686,
+"name": "Buckwheat groats, roasted (cooked)",
+"short": "Buckwheat groats",
+"group": "grains",
+"page": "buckwheat",
+"serving": "1 cup",
+"g": 168.0,
+"amount": 3.192,
+"per100": 1.9,
+"dv": 2.7,
+"kcal": 155
+}
+},
+"b6": {
+"median": 0.143,
+"n": 20,
+"top": {
+"fdc_id": 168875,
+"name": "Rice, brown (medium-grain, cooked)",
+"short": "Rice, brown",
+"group": "grains",
+"page": null,
+"serving": "1 cup",
+"g": 195.0,
+"amount": 0.291,
+"per100": 0.149,
+"dv": 17.1,
+"kcal": 218
+}
+},
+"folate": {
+"median": 23.535,
+"n": 20,
+"top": {
+"fdc_id": 168917,
+"name": "Quinoa, cooked",
+"short": "Quinoa, cooked",
+"group": "grains",
+"page": "quinoa",
+"serving": "1 cup",
+"g": 185.0,
+"amount": 77.7,
+"per100": 42.0,
+"dv": 19.4,
+"kcal": 222
+}
+},
+"omega3": {
+"median": 0.024,
+"n": 17,
+"top": {
+"fdc_id": 168917,
+"name": "Quinoa, cooked",
+"short": "Quinoa, cooked",
+"group": "grains",
+"page": "quinoa",
+"serving": "1 cup",
+"g": 185.0,
+"amount": 0.185,
+"per100": 0.1,
+"dv": null,
+"kcal": 222
+}
+},
+"selenium": {
+"median": 9.818,
+"n": 16,
+"top": {
+"fdc_id": 169744,
+"name": "Wheat, KAMUT khorasan (cooked)",
+"short": "Wheat, KAMUT khorasan",
+"group": "grains",
+"page": null,
+"serving": "1 cup",
+"g": 172.0,
+"amount": 54.868,
+"per100": 31.9,
+"dv": 99.8,
+"kcal": 227
+}
+},
+"copper": {
+"median": 0.207,
+"n": 20,
+"top": {
+"fdc_id": 168918,
+"name": "Teff, cooked",
+"short": "Teff, cooked",
+"group": "grains",
+"page": null,
+"serving": "1 cup",
+"g": 252.0,
+"amount": 0.57,
+"per100": 0.226,
+"dv": 63.3,
+"kcal": 255
+}
+},
+"manganese": {
+"median": 1.138,
+"n": 20,
+"top": {
+"fdc_id": 168918,
+"name": "Teff, cooked",
+"short": "Teff, cooked",
+"group": "grains",
+"page": null,
+"serving": "1 cup",
+"g": 252.0,
+"amount": 7.207,
+"per100": 2.86,
+"dv": 313.4,
+"kcal": 255
+}
+},
+"phosphorus": {
+"median": 148.695,
+"n": 20,
+"top": {
+"fdc_id": 173904,
+"name": "Cereals, oats (regular and quick, not fortified, dry)",
+"short": "Cereals, oats",
+"group": "grains",
+"page": "oats",
+"serving": "1 cup",
+"g": 81.0,
+"amount": 332.1,
+"per100": 410.0,
+"dv": 26.6,
+"kcal": 307
+}
+},
+"choline": {
+"median": 17.656,
+"n": 12,
+"top": {
+"fdc_id": 168917,
+"name": "Quinoa, cooked",
+"short": "Quinoa, cooked",
+"group": "grains",
+"page": "quinoa",
+"serving": "1 cup",
+"g": 185.0,
+"amount": 42.55,
+"per100": 23.0,
+"dv": 7.7,
+"kcal": 222
+}
+},
+"thiamin": {
+"median": 0.143,
+"n": 20,
+"top": {
+"fdc_id": 168918,
+"name": "Teff, cooked",
+"short": "Teff, cooked",
+"group": "grains",
+"page": null,
+"serving": "1 cup",
+"g": 252.0,
+"amount": 0.461,
+"per100": 0.183,
+"dv": 38.4,
+"kcal": 255
+}
+},
+"riboflavin": {
+"median": 0.074,
+"n": 20,
+"top": {
+"fdc_id": 168917,
+"name": "Quinoa, cooked",
+"short": "Quinoa, cooked",
+"group": "grains",
+"page": "quinoa",
+"serving": "1 cup",
+"g": 185.0,
+"amount": 0.204,
+"per100": 0.11,
+"dv": 15.7,
+"kcal": 222
+}
+},
+"niacin": {
+"median": 2.126,
+"n": 20,
+"top": {
+"fdc_id": 169704,
+"name": "Rice, brown (long-grain, cooked)",
+"short": "Rice, brown",
+"group": "grains",
+"page": "brown-rice",
+"serving": "1 cup",
+"g": 202.0,
+"amount": 5.173,
+"per100": 2.561,
+"dv": 32.3,
+"kcal": 248
+}
+},
+"lycopene": {
+"median": 0.0,
+"n": 11,
+"top": null
+},
+"lutein": {
+"median": 98.28,
+"n": 11,
+"top": {
+"fdc_id": 173904,
+"name": "Cereals, oats (regular and quick, not fortified, dry)",
+"short": "Cereals, oats",
+"group": "grains",
+"page": "oats",
+"serving": "1 cup",
+"g": 81.0,
+"amount": 145.8,
+"per100": 180.0,
+"dv": null,
+"kcal": 307
+}
+},
+"beta_carotene": {
+"median": 1.82,
+"n": 11,
+"top": null
+},
+"caffeine": {
+"median": 0.0,
+"n": 11,
+"top": null
+},
+"mono": {
+"median": 0.175,
+"n": 18,
+"top": {
+"fdc_id": 173904,
+"name": "Cereals, oats (regular and quick, not fortified, dry)",
+"short": "Cereals, oats",
+"group": "grains",
+"page": "oats",
+"serving": "1 cup",
+"g": 81.0,
+"amount": 1.604,
+"per100": 1.98,
+"dv": null,
+"kcal": 307
+}
+},
+"poly": {
+"median": 0.388,
+"n": 18,
+"top": {
+"fdc_id": 168917,
+"name": "Quinoa, cooked",
+"short": "Quinoa, cooked",
+"group": "grains",
+"page": "quinoa",
+"serving": "1 cup",
+"g": 185.0,
+"amount": 1.994,
+"per100": 1.078,
+"dv": null,
+"kcal": 222
+}
+}
+},
+"sample": [
+"Barley",
+"Buckwheat groats",
+"Bulgur",
+"Cereals",
+"Couscous",
+"Millet",
+"Noodles",
+"Pasta",
+"Quinoa",
+"Rice",
+"Rice noodles",
+"Spaghetti",
+"Spelt",
+"Teff",
+"Wheat",
+"Wild rice"
+]
+},
+"fish-seafood": {
+"slug": "fish-seafood",
+"name": "Fish & seafood",
+"count": 86,
+"pages": [
+"salmon",
+"tuna",
+"sardines",
+"shrimp",
+"cod",
+"tilapia",
+"oysters",
+"mussels"
+],
+"stats": {
+"potassium": {
+"median": 287.725,
+"n": 86,
+"top": {
+"fdc_id": 171976,
+"name": "Mollusks, clam (mixed species, canned, drained solids)",
+"short": "Mollusks, clam",
+"group": "fish-seafood",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 533.8,
+"per100": 628.0,
+"dv": 11.4,
+"kcal": 121
+}
+},
+"magnesium": {
+"median": 29.325,
+"n": 86,
+"top": {
+"fdc_id": 171999,
+"name": "Fish, salmon (chinook, cooked, dry heat)",
+"short": "Fish, salmon",
+"group": "fish-seafood",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 103.7,
+"per100": 122.0,
+"dv": 24.7,
+"kcal": 196
+}
+},
+"iron": {
+"median": 0.616,
+"n": 86,
+"top": {
+"fdc_id": 171980,
+"name": "Mollusks, oyster (eastern, wild, cooked, moist heat)",
+"short": "Mollusks, oyster",
+"group": "fish-seafood",
+"page": "oysters",
+"serving": "3 oz",
+"g": 85.0,
+"amount": 7.829,
+"per100": 9.21,
+"dv": 43.5,
+"kcal": 87
+}
+},
+"protein": {
+"median": 19.559,
+"n": 86,
+"top": {
+"fdc_id": 173707,
+"name": "Fish, tuna (fresh, bluefin, cooked, dry heat)",
+"short": "Fish, tuna",
+"group": "fish-seafood",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 25.424,
+"per100": 29.91,
+"dv": 50.8,
+"kcal": 156
+}
+},
+"fiber": {
+"median": 0.0,
+"n": 83,
+"top": null
+},
+"calcium": {
+"median": 25.075,
+"n": 86,
+"top": {
+"fdc_id": 175139,
+"name": "Fish, sardine (Atlantic, canned in oil, drained solids with bone)",
+"short": "Fish, sardine",
+"group": "fish-seafood",
+"page": "sardines",
+"serving": "3 oz",
+"g": 85.0,
+"amount": 324.7,
+"per100": 382.0,
+"dv": 25.0,
+"kcal": 177
+}
+},
+"zinc": {
+"median": 0.523,
+"n": 86,
+"top": {
+"fdc_id": 171981,
+"name": "Mollusks, oyster (eastern, canned)",
+"short": "Mollusks, oyster",
+"group": "fish-seafood",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 77.308,
+"per100": 90.95,
+"dv": 702.8,
+"kcal": 58
+}
+},
+"vit_c": {
+"median": 0.0,
+"n": 83,
+"top": {
+"fdc_id": 171975,
+"name": "Mollusks, clam (mixed species, cooked, moist heat)",
+"short": "Mollusks, clam",
+"group": "fish-seafood",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 18.785,
+"per100": 22.1,
+"dv": 20.9,
+"kcal": 126
+}
+},
+"vit_d": {
+"median": 1.7,
+"n": 42,
+"top": {
+"fdc_id": 173723,
+"name": "Salmon, sockeye (canned, drained solids, without skin and bones)",
+"short": "Salmon, sockeye",
+"group": "fish-seafood",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 18.275,
+"per100": 21.5,
+"dv": 91.4,
+"kcal": 134
+}
+},
+"b12": {
+"median": 2.771,
+"n": 83,
+"top": {
+"fdc_id": 171975,
+"name": "Mollusks, clam (mixed species, cooked, moist heat)",
+"short": "Mollusks, clam",
+"group": "fish-seafood",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 84.056,
+"per100": 98.89,
+"dv": 3502.4,
+"kcal": 126
+}
+},
+"vit_a": {
+"median": 22.1,
+"n": 82,
+"top": {
+"fdc_id": 173707,
+"name": "Fish, tuna (fresh, bluefin, cooked, dry heat)",
+"short": "Fish, tuna",
+"group": "fish-seafood",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 643.45,
+"per100": 757.0,
+"dv": 71.5,
+"kcal": 156
+}
+},
+"vit_e": {
+"median": 0.85,
+"n": 45,
+"top": {
+"fdc_id": 174195,
+"name": "Fish, fish sticks (frozen, prepared)",
+"short": "Fish, fish sticks",
+"group": "fish-seafood",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 5.848,
+"per100": 6.88,
+"dv": 39.0,
+"kcal": 235
+}
+},
+"vit_k": {
+"median": 0.085,
+"n": 45,
+"top": {
+"fdc_id": 175157,
+"name": "Fish, tuna (white, canned in oil, drained solids)",
+"short": "Fish, tuna",
+"group": "fish-seafood",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 5.865,
+"per100": 6.9,
+"dv": 4.9,
+"kcal": 158
+}
+},
+"b6": {
+"median": 0.236,
+"n": 83,
+"top": {
+"fdc_id": 172006,
+"name": "Fish, tuna (yellowfin, fresh, cooked, dry heat)",
+"short": "Fish, tuna",
+"group": "fish-seafood",
+"page": "tuna",
+"serving": "3 oz",
+"g": 85.0,
+"amount": 0.882,
+"per100": 1.038,
+"dv": 51.9,
+"kcal": 110
+}
+},
+"folate": {
+"median": 7.65,
+"n": 83,
+"top": {
+"fdc_id": 174217,
+"name": "Mollusks, mussel (blue, cooked, moist heat)",
+"short": "Mollusks, mussel",
+"group": "fish-seafood",
+"page": "mussels",
+"serving": "3 oz",
+"g": 85.0,
+"amount": 64.6,
+"per100": 76.0,
+"dv": 16.1,
+"kcal": 146
+}
+},
+"omega3": {
+"median": 0.451,
+"n": 84,
+"top": {
+"fdc_id": 175168,
+"name": "Fish, salmon (Atlantic, farmed, cooked, dry heat)",
+"short": "Fish, salmon",
+"group": "fish-seafood",
+"page": "salmon",
+"serving": "3 oz",
+"g": 85.0,
+"amount": 1.921,
+"per100": 2.26,
+"dv": null,
+"kcal": 175
+}
+},
+"selenium": {
+"median": 35.19,
+"n": 83,
+"top": {
+"fdc_id": 174250,
+"name": "Mollusks, oyster (Pacific, cooked, moist heat)",
+"short": "Mollusks, oyster",
+"group": "fish-seafood",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 130.9,
+"per100": 154.0,
+"dv": 238.0,
+"kcal": 139
+}
+},
+"copper": {
+"median": 0.065,
+"n": 86,
+"top": {
+"fdc_id": 171980,
+"name": "Mollusks, oyster (eastern, wild, cooked, moist heat)",
+"short": "Mollusks, oyster",
+"group": "fish-seafood",
+"page": "oysters",
+"serving": "3 oz",
+"g": 85.0,
+"amount": 4.851,
+"per100": 5.707,
+"dv": 539.0,
+"kcal": 87
+}
+},
+"manganese": {
+"median": 0.017,
+"n": 86,
+"top": {
+"fdc_id": 174217,
+"name": "Mollusks, mussel (blue, cooked, moist heat)",
+"short": "Mollusks, mussel",
+"group": "fish-seafood",
+"page": "mussels",
+"serving": "3 oz",
+"g": 85.0,
+"amount": 5.78,
+"per100": 6.8,
+"dv": 251.3,
+"kcal": 146
+}
+},
+"phosphorus": {
+"median": 226.95,
+"n": 86,
+"top": {
+"fdc_id": 175139,
+"name": "Fish, sardine (Atlantic, canned in oil, drained solids with bone)",
+"short": "Fish, sardine",
+"group": "fish-seafood",
+"page": "sardines",
+"serving": "3 oz",
+"g": 85.0,
+"amount": 416.5,
+"per100": 490.0,
+"dv": 33.3,
+"kcal": 177
+}
+},
+"choline": {
+"median": 70.507,
+"n": 42,
+"top": {
+"fdc_id": 171971,
+"name": "Crustaceans, shrimp (mixed species, cooked, moist heat (may contain additives to retain moisture))",
+"short": "Crustaceans, shrimp",
+"group": "fish-seafood",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 115.09,
+"per100": 135.4,
+"dv": 20.9,
+"kcal": 101
+}
+},
+"thiamin": {
+"median": 0.055,
+"n": 83,
+"top": {
+"fdc_id": 172004,
+"name": "Fish, trout (mixed species, cooked, dry heat)",
+"short": "Fish, trout",
+"group": "fish-seafood",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 0.362,
+"per100": 0.426,
+"dv": 30.2,
+"kcal": 162
+}
+},
+"riboflavin": {
+"median": 0.096,
+"n": 83,
+"top": {
+"fdc_id": 174236,
+"name": "Fish, mackerel (king, cooked, dry heat)",
+"short": "Fish, mackerel",
+"group": "fish-seafood",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 0.493,
+"per100": 0.58,
+"dv": 37.9,
+"kcal": 114
+}
+},
+"niacin": {
+"median": 4.012,
+"n": 83,
+"top": {
+"fdc_id": 172006,
+"name": "Fish, tuna (yellowfin, fresh, cooked, dry heat)",
+"short": "Fish, tuna",
+"group": "fish-seafood",
+"page": "tuna",
+"serving": "3 oz",
+"g": 85.0,
+"amount": 18.759,
+"per100": 22.07,
+"dv": 117.2,
+"kcal": 110
+}
+},
+"lycopene": {
+"median": 0.0,
+"n": 45,
+"top": null
+},
+"lutein": {
+"median": 0.0,
+"n": 45,
+"top": null
+},
+"beta_carotene": {
+"median": 0.0,
+"n": 45,
+"top": null
+},
+"caffeine": {
+"median": 0.0,
+"n": 45,
+"top": null
+},
+"mono": {
+"median": 0.832,
+"n": 85,
+"top": {
+"fdc_id": 174232,
+"name": "Fish, halibut (greenland, cooked, dry heat)",
+"short": "Fish, halibut",
+"group": "fish-seafood",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 9.131,
+"per100": 10.742,
+"dv": null,
+"kcal": 203
+}
+},
+"poly": {
+"median": 0.854,
+"n": 85,
+"top": {
+"fdc_id": 174195,
+"name": "Fish, fish sticks (frozen, prepared)",
+"short": "Fish, fish sticks",
+"group": "fish-seafood",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 6.65,
+"per100": 7.824,
+"dv": null,
+"kcal": 235
+}
+}
+},
+"sample": [
+"Crustaceans",
+"Fish",
+"Mollusks",
+"Salmon"
+]
+},
+"meat": {
+"slug": "meat",
+"name": "Meat & poultry",
+"count": 907,
+"pages": [
+"chicken-breast",
+"turkey-breast",
+"ground-beef",
+"beef-liver",
+"pork-chop"
+],
+"stats": {
+"potassium": {
+"median": 265.2,
+"n": 903,
+"top": {
+"fdc_id": 171117,
+"name": "Chicken, ground (crumbles, cooked, pan-browned)",
+"short": "Chicken",
+"group": "meat",
+"page": null,
+"serving": "3 oz crumbled",
+"g": 85.0,
+"amount": 575.45,
+"per100": 677.0,
+"dv": 12.2,
+"kcal": 161
+}
+},
+"magnesium": {
+"median": 19.55,
+"n": 903,
+"top": {
+"fdc_id": 168313,
+"name": "Pork, fresh (loin, tenderloin, separable lean only, cooked, broiled)",
+"short": "Pork",
+"group": "meat",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 30.6,
+"per100": 36.0,
+"dv": 7.3,
+"kcal": 159
+}
+},
+"iron": {
+"median": 1.904,
+"n": 907,
+"top": {
+"fdc_id": 168626,
+"name": "Beef, variety meats and by-products (liver, cooked, braised)",
+"short": "Beef",
+"group": "meat",
+"page": "beef-liver",
+"serving": "3 oz",
+"g": 85.0,
+"amount": 5.559,
+"per100": 6.54,
+"dv": 30.9,
+"kcal": 162
+}
+},
+"protein": {
+"median": 23.282,
+"n": 907,
+"top": {
+"fdc_id": 172605,
+"name": "Game meat, deer (shoulder clod, separable lean only, cooked, braised)",
+"short": "Game meat, deer",
+"group": "meat",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 30.838,
+"per100": 36.28,
+"dv": 61.7,
+"kcal": 162
+}
+},
+"fiber": {
+"median": 0.0,
+"n": 877,
+"top": null
+},
+"calcium": {
+"median": 11.05,
+"n": 907,
+"top": {
+"fdc_id": 168247,
+"name": "Pork, fresh (loin, sirloin (chops), bone-in, separable lean only, cooked, broiled)",
+"short": "Pork",
+"group": "meat",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 55.25,
+"per100": 65.0,
+"dv": 4.2,
+"kcal": 148
+}
+},
+"zinc": {
+"median": 4.106,
+"n": 903,
+"top": {
+"fdc_id": 169568,
+"name": "Beef, chuck (short ribs, boneless, separable lean only, trimmed to 0\" fat, select, cooked, braised)",
+"short": "Beef, chuck",
+"group": "meat",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 10.438,
+"per100": 12.28,
+"dv": 94.9,
+"kcal": 190
+}
+},
+"vit_c": {
+"median": 0.0,
+"n": 885,
+"top": {
+"fdc_id": 171487,
+"name": "Turkey, all classes (liver, cooked, simmered)",
+"short": "Turkey, all classes",
+"group": "meat",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 19.21,
+"per100": 22.6,
+"dv": 21.3,
+"kcal": 161
+}
+},
+"vit_d": {
+"median": 0.085,
+"n": 604,
+"top": {
+"fdc_id": 167854,
+"name": "Pork, fresh (spareribs, separable lean and fat, cooked, braised)",
+"short": "Pork",
+"group": "meat",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 2.21,
+"per100": 2.6,
+"dv": 11.1,
+"kcal": 337
+}
+},
+"b12": {
+"median": 1.84,
+"n": 894,
+"top": {
+"fdc_id": 168627,
+"name": "Beef, variety meats and by-products (liver, cooked, pan-fried)",
+"short": "Beef",
+"group": "meat",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 70.66,
+"per100": 83.13,
+"dv": 2944.2,
+"kcal": 149
+}
+},
+"vit_a": {
+"median": 1.7,
+"n": 864,
+"top": {
+"fdc_id": 171487,
+"name": "Turkey, all classes (liver, cooked, simmered)",
+"short": "Turkey, all classes",
+"group": "meat",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 9138.35,
+"per100": 10751.0,
+"dv": 1015.4,
+"kcal": 161
+}
+},
+"vit_e": {
+"median": 0.187,
+"n": 739,
+"top": {
+"fdc_id": 172412,
+"name": "Goose, domesticated (meat and skin, cooked, roasted)",
+"short": "Goose",
+"group": "meat",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 1.479,
+"per100": 1.74,
+"dv": 9.9,
+"kcal": 259
+}
+},
+"vit_k": {
+"median": 1.36,
+"n": 627,
+"top": {
+"fdc_id": 171815,
+"name": "Beef, round (top round, steak, separable lean only, trimmed to 1/8\" fat, all grades, cooked, broiled)",
+"short": "Beef, round",
+"group": "meat",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 14.875,
+"per100": 17.5,
+"dv": 12.4,
+"kcal": 157
+}
+},
+"b6": {
+"median": 0.347,
+"n": 896,
+"top": {
+"fdc_id": 171534,
+"name": "Chicken, broiler or fryers (breast, skinless, boneless, meat only, cooked, grilled)",
+"short": "Chicken, broiler or fryers",
+"group": "meat",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 0.983,
+"per100": 1.157,
+"dv": 57.9,
+"kcal": 128
+}
+},
+"folate": {
+"median": 5.95,
+"n": 793,
+"top": {
+"fdc_id": 171487,
+"name": "Turkey, all classes (liver, cooked, simmered)",
+"short": "Turkey, all classes",
+"group": "meat",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 587.35,
+"per100": 691.0,
+"dv": 146.8,
+"kcal": 161
+}
+},
+"omega3": {
+"median": 0.041,
+"n": 907,
+"top": {
+"fdc_id": 172874,
+"name": "Turkey, skin (from retail parts, from dark meat, cooked, roasted)",
+"short": "Turkey, skin",
+"group": "meat",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 0.587,
+"per100": 0.691,
+"dv": null,
+"kcal": 352
+}
+},
+"selenium": {
+"median": 24.565,
+"n": 902,
+"top": {
+"fdc_id": 171487,
+"name": "Turkey, all classes (liver, cooked, simmered)",
+"short": "Turkey, all classes",
+"group": "meat",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 86.955,
+"per100": 102.3,
+"dv": 158.1,
+"kcal": 161
+}
+},
+"copper": {
+"median": 0.082,
+"n": 903,
+"top": {
+"fdc_id": 168627,
+"name": "Beef, variety meats and by-products (liver, cooked, pan-fried)",
+"short": "Beef",
+"group": "meat",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 12.4,
+"per100": 14.588,
+"dv": 1377.8,
+"kcal": 149
+}
+},
+"manganese": {
+"median": 0.011,
+"n": 832,
+"top": {
+"fdc_id": 168627,
+"name": "Beef, variety meats and by-products (liver, cooked, pan-fried)",
+"short": "Beef",
+"group": "meat",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 0.303,
+"per100": 0.356,
+"dv": 13.2,
+"kcal": 149
+}
+},
+"phosphorus": {
+"median": 180.625,
+"n": 898,
+"top": {
+"fdc_id": 168626,
+"name": "Beef, variety meats and by-products (liver, cooked, braised)",
+"short": "Beef",
+"group": "meat",
+"page": "beef-liver",
+"serving": "3 oz",
+"g": 85.0,
+"amount": 422.45,
+"per100": 497.0,
+"dv": 33.8,
+"kcal": 162
+}
+},
+"choline": {
+"median": 77.69,
+"n": 625,
+"top": {
+"fdc_id": 168626,
+"name": "Beef, variety meats and by-products (liver, cooked, braised)",
+"short": "Beef",
+"group": "meat",
+"page": "beef-liver",
+"serving": "3 oz",
+"g": 85.0,
+"amount": 362.1,
+"per100": 426.0,
+"dv": 65.8,
+"kcal": 162
+}
+},
+"thiamin": {
+"median": 0.068,
+"n": 896,
+"top": {
+"fdc_id": 167852,
+"name": "Pork, fresh (shoulder, blade, boston (roasts), separable lean only, cooked, roasted)",
+"short": "Pork",
+"group": "meat",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 0.949,
+"per100": 1.116,
+"dv": 79.1,
+"kcal": 197
+}
+},
+"riboflavin": {
+"median": 0.199,
+"n": 897,
+"top": {
+"fdc_id": 168627,
+"name": "Beef, variety meats and by-products (liver, cooked, pan-fried)",
+"short": "Beef",
+"group": "meat",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 2.911,
+"per100": 3.425,
+"dv": 223.9,
+"kcal": 149
+}
+},
+"niacin": {
+"median": 4.831,
+"n": 901,
+"top": {
+"fdc_id": 168626,
+"name": "Beef, variety meats and by-products (liver, cooked, braised)",
+"short": "Beef",
+"group": "meat",
+"page": "beef-liver",
+"serving": "3 oz",
+"g": 85.0,
+"amount": 14.896,
+"per100": 17.525,
+"dv": 93.1,
+"kcal": 162
+}
+},
+"lycopene": {
+"median": 0.0,
+"n": 772,
+"top": null
+},
+"lutein": {
+"median": 0.0,
+"n": 772,
+"top": null
+},
+"beta_carotene": {
+"median": 0.0,
+"n": 772,
+"top": null
+},
+"caffeine": {
+"median": 0.0,
+"n": 773,
+"top": null
+},
+"mono": {
+"median": 3.713,
+"n": 906,
+"top": {
+"fdc_id": 169191,
+"name": "Pork, ground (72% lean / 28% fat, cooked, crumbles)",
+"short": "Pork",
+"group": "meat",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 25.171,
+"per100": 29.613,
+"dv": null,
+"kcal": 334
+}
+},
+"poly": {
+"median": 0.528,
+"n": 906,
+"top": {
+"fdc_id": 171082,
+"name": "Turkey, whole (skin (light and dark), roasted)",
+"short": "Turkey",
+"group": "meat",
+"page": null,
+"serving": "3 oz",
+"g": 85.0,
+"amount": 10.118,
+"per100": 11.903,
+"dv": null,
+"kcal": 390
+}
+}
+},
+"sample": [
+"Beef",
+"Bison",
+"Chicken",
+"Chicken patty",
+"Dove",
+"Duck",
+"Game meat",
+"Goose",
+"Hormel always tender",
+"Lamb",
+"Pheasant",
+"Pork",
+"Pork loin",
+"Quail",
+"Turkey",
+"Turkey and gravy",
+"Turkey breast",
+"Turkey thigh",
+"Veal"
+]
+},
+"dairy-eggs": {
+"slug": "dairy-eggs",
+"name": "Dairy & eggs",
+"count": 72,
+"pages": [
+"egg",
+"whole-milk",
+"skim-milk",
+"greek-yogurt",
+"yogurt",
+"cheddar",
+"mozzarella",
+"parmesan",
+"cottage-cheese",
+"feta",
+"swiss-cheese"
+],
+"stats": {
+"potassium": {
+"median": 35.438,
+"n": 71,
+"top": {
+"fdc_id": 170887,
+"name": "Yogurt, plain (skim milk)",
+"short": "Yogurt",
+"group": "dairy-eggs",
+"page": null,
+"serving": "1 cup (8 fl oz)",
+"g": 245.0,
+"amount": 624.75,
+"per100": 255.0,
+"dv": 13.3,
+"kcal": 137
+}
+},
+"magnesium": {
+"median": 7.371,
+"n": 71,
+"top": {
+"fdc_id": 170887,
+"name": "Yogurt, plain (skim milk)",
+"short": "Yogurt",
+"group": "dairy-eggs",
+"page": null,
+"serving": "1 cup (8 fl oz)",
+"g": 245.0,
+"amount": 46.55,
+"per100": 19.0,
+"dv": 11.1,
+"kcal": 137
+}
+},
+"iron": {
+"median": 0.091,
+"n": 72,
+"top": {
+"fdc_id": 172185,
+"name": "Egg, whole (cooked, omelet)",
+"short": "Egg",
+"group": "dairy-eggs",
+"page": null,
+"serving": "1 large",
+"g": 61.0,
+"amount": 0.903,
+"per100": 1.48,
+"dv": 5.0,
+"kcal": 94
+}
+},
+"protein": {
+"median": 6.615,
+"n": 72,
+"top": {
+"fdc_id": 170894,
+"name": "Yogurt, Greek (plain, nonfat)",
+"short": "Yogurt, Greek",
+"group": "dairy-eggs",
+"page": "greek-yogurt",
+"serving": "1 container",
+"g": 170.0,
+"amount": 17.51,
+"per100": 10.3,
+"dv": 35.0,
+"kcal": 100
+}
+},
+"fiber": {
+"median": 0.0,
+"n": 71,
+"top": null
+},
+"calcium": {
+"median": 187.535,
+"n": 72,
+"top": {
+"fdc_id": 170887,
+"name": "Yogurt, plain (skim milk)",
+"short": "Yogurt",
+"group": "dairy-eggs",
+"page": null,
+"serving": "1 cup (8 fl oz)",
+"g": 245.0,
+"amount": 487.55,
+"per100": 199.0,
+"dv": 37.5,
+"kcal": 137
+}
+},
+"zinc": {
+"median": 0.797,
+"n": 71,
+"top": {
+"fdc_id": 170887,
+"name": "Yogurt, plain (skim milk)",
+"short": "Yogurt",
+"group": "dairy-eggs",
+"page": null,
+"serving": "1 cup (8 fl oz)",
+"g": 245.0,
+"amount": 2.377,
+"per100": 0.97,
+"dv": 21.6,
+"kcal": 137
+}
+},
+"vit_c": {
+"median": 0.0,
+"n": 71,
+"top": null
+},
+"vit_d": {
+"median": 0.142,
+"n": 65,
+"top": {
+"fdc_id": 172225,
+"name": "Milk, buttermilk (fluid, whole)",
+"short": "Milk, buttermilk",
+"group": "dairy-eggs",
+"page": null,
+"serving": "1 cup",
+"g": 245.0,
+"amount": 3.185,
+"per100": 1.3,
+"dv": 15.9,
+"kcal": 152
+}
+},
+"b12": {
+"median": 0.383,
+"n": 71,
+"top": {
+"fdc_id": 170887,
+"name": "Yogurt, plain (skim milk)",
+"short": "Yogurt",
+"group": "dairy-eggs",
+"page": null,
+"serving": "1 cup (8 fl oz)",
+"g": 245.0,
+"amount": 1.494,
+"per100": 0.61,
+"dv": 62.3,
+"kcal": 137
+}
+},
+"vit_a": {
+"median": 64.922,
+"n": 71,
+"top": {
+"fdc_id": 172197,
+"name": "Cheese, goat (hard type)",
+"short": "Cheese, goat",
+"group": "dairy-eggs",
+"page": null,
+"serving": "1 oz",
+"g": 28.35,
+"amount": 137.781,
+"per100": 486.0,
+"dv": 15.3,
+"kcal": 128
+}
+},
+"vit_e": {
+"median": 0.074,
+"n": 66,
+"top": {
+"fdc_id": 172184,
+"name": "Egg, yolk (raw, fresh)",
+"short": "Egg, yolk",
+"group": "dairy-eggs",
+"page": "egg",
+"serving": "1 large",
+"g": 17.0,
+"amount": 0.959,
+"per100": 5.64,
+"dv": 6.4,
+"kcal": 55
+}
+},
+"vit_k": {
+"median": 0.595,
+"n": 66,
+"top": {
+"fdc_id": 169078,
+"name": "Cheese, cottage (with vegetables)",
+"short": "Cheese, cottage",
+"group": "dairy-eggs",
+"page": null,
+"serving": "1 oz",
+"g": 28.35,
+"amount": 3.119,
+"per100": 11.0,
+"dv": 2.6,
+"kcal": 27
+}
+},
+"b6": {
+"median": 0.023,
+"n": 71,
+"top": {
+"fdc_id": 171265,
+"name": "Milk, whole (3.25% milkfat, with added vitamin D)",
+"short": "Milk",
+"group": "dairy-eggs",
+"page": "whole-milk",
+"serving": "1 cup",
+"g": 244.0,
+"amount": 0.149,
+"per100": 0.061,
+"dv": 8.8,
+"kcal": 149
+}
+},
+"folate": {
+"median": 4.961,
+"n": 70,
+"top": {
+"fdc_id": 171287,
+"name": "Egg, whole (raw, fresh)",
+"short": "Egg",
+"group": "dairy-eggs",
+"page": "egg",
+"serving": "1 large",
+"g": 50.0,
+"amount": 35.5,
+"per100": 71.0,
+"dv": 8.9,
+"kcal": 72
+}
+},
+"omega3": {
+"median": 0.06,
+"n": 71,
+"top": {
+"fdc_id": 170843,
+"name": "Cheese, fontina",
+"short": "Cheese, fontina",
+"group": "dairy-eggs",
+"page": null,
+"serving": "1 oz",
+"g": 28.35,
+"amount": 0.224,
+"per100": 0.79,
+"dv": null,
+"kcal": 110
+}
+},
+"selenium": {
+"median": 4.111,
+"n": 71,
+"top": {
+"fdc_id": 170894,
+"name": "Yogurt, Greek (plain, nonfat)",
+"short": "Yogurt, Greek",
+"group": "dairy-eggs",
+"page": "greek-yogurt",
+"serving": "1 container",
+"g": 170.0,
+"amount": 16.83,
+"per100": 9.9,
+"dv": 30.6,
+"kcal": 100
+}
+},
+"copper": {
+"median": 0.009,
+"n": 71,
+"top": {
+"fdc_id": 173435,
+"name": "Cheese, goat (soft type)",
+"short": "Cheese, goat",
+"group": "dairy-eggs",
+"page": null,
+"serving": "1 oz",
+"g": 28.35,
+"amount": 0.208,
+"per100": 0.732,
+"dv": 23.1,
+"kcal": 75
+}
+},
+"manganese": {
+"median": 0.006,
+"n": 66,
+"top": {
+"fdc_id": 172197,
+"name": "Cheese, goat (hard type)",
+"short": "Cheese, goat",
+"group": "dairy-eggs",
+"page": null,
+"serving": "1 oz",
+"g": 28.35,
+"amount": 0.071,
+"per100": 0.252,
+"dv": 3.1,
+"kcal": 128
+}
+},
+"phosphorus": {
+"median": 127.859,
+"n": 71,
+"top": {
+"fdc_id": 170887,
+"name": "Yogurt, plain (skim milk)",
+"short": "Yogurt",
+"group": "dairy-eggs",
+"page": null,
+"serving": "1 cup (8 fl oz)",
+"g": 245.0,
+"amount": 384.65,
+"per100": 157.0,
+"dv": 30.8,
+"kcal": 137
+}
+},
+"choline": {
+"median": 4.366,
+"n": 65,
+"top": {
+"fdc_id": 171287,
+"name": "Egg, whole (raw, fresh)",
+"short": "Egg",
+"group": "dairy-eggs",
+"page": "egg",
+"serving": "1 large",
+"g": 50.0,
+"amount": 167.5,
+"per100": 335.0,
+"dv": 30.5,
+"kcal": 72
+}
+},
+"thiamin": {
+"median": 0.009,
+"n": 71,
+"top": {
+"fdc_id": 171265,
+"name": "Milk, whole (3.25% milkfat, with added vitamin D)",
+"short": "Milk",
+"group": "dairy-eggs",
+"page": "whole-milk",
+"serving": "1 cup",
+"g": 244.0,
+"amount": 0.137,
+"per100": 0.056,
+"dv": 11.4,
+"kcal": 149
+}
+},
+"riboflavin": {
+"median": 0.104,
+"n": 71,
+"top": {
+"fdc_id": 171284,
+"name": "Yogurt, plain (whole milk)",
+"short": "Yogurt",
+"group": "dairy-eggs",
+"page": "yogurt",
+"serving": "1 cup (8 fl oz)",
+"g": 245.0,
+"amount": 0.596,
+"per100": 0.2431,
+"dv": 45.8,
+"kcal": 149
+}
+},
+"niacin": {
+"median": 0.039,
+"n": 71,
+"top": {
+"fdc_id": 172197,
+"name": "Cheese, goat (hard type)",
+"short": "Cheese, goat",
+"group": "dairy-eggs",
+"page": null,
+"serving": "1 oz",
+"g": 28.35,
+"amount": 0.68,
+"per100": 2.4,
+"dv": 4.3,
+"kcal": 128
+}
+},
+"lycopene": {
+"median": 0.0,
+"n": 66,
+"top": null
+},
+"lutein": {
+"median": 0.0,
+"n": 65,
+"top": {
+"fdc_id": 172185,
+"name": "Egg, whole (cooked, omelet)",
+"short": "Egg",
+"group": "dairy-eggs",
+"page": null,
+"serving": "1 large",
+"g": 61.0,
+"amount": 258.03,
+"per100": 423.0,
+"dv": null,
+"kcal": 94
+}
+},
+"beta_carotene": {
+"median": 11.624,
+"n": 66,
+"top": {
+"fdc_id": 169078,
+"name": "Cheese, cottage (with vegetables)",
+"short": "Cheese, cottage",
+"group": "dairy-eggs",
+"page": null,
+"serving": "1 oz",
+"g": 28.35,
+"amount": 40.257,
+"per100": 142.0,
+"dv": null,
+"kcal": 27
+}
+},
+"caffeine": {
+"median": 0.0,
+"n": 64,
+"top": null
+},
+"mono": {
+"median": 2.057,
+"n": 71,
+"top": {
+"fdc_id": 173430,
+"name": "Butter, without salt",
+"short": "Butter",
+"group": "dairy-eggs",
+"page": "butter",
+"serving": "1 tbsp",
+"g": 14.2,
+"amount": 3.327,
+"per100": 23.43,
+"dv": null,
+"kcal": 102
+}
+},
+"poly": {
+"median": 0.237,
+"n": 72,
+"top": {
+"fdc_id": 172185,
+"name": "Egg, whole (cooked, omelet)",
+"short": "Egg",
+"group": "dairy-eggs",
+"page": null,
+"serving": "1 large",
+"g": 61.0,
+"amount": 1.654,
+"per100": 2.712,
+"dv": null,
+"kcal": 94
+}
+}
+},
+"sample": [
+"Butter",
+"Cheese",
+"Cream",
+"Dulce de leche",
+"Egg",
+"Milk",
+"Yogurt"
+]
+}
+}

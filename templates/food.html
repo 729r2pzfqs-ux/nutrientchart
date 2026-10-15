@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% from "macros.html" import dvbar, nutrient_rows, faq_block, ad, score_block, food_link %}
+{% block body %}
+<h1>{{ f.name }} nutrition facts</h1>
+<p class="answer">{{ f.answer }}</p>
+<div class="chips">{% for r in f.highlights[:5] %}{% if r.key in rank_keys %}<a class="chip" href="/foods-high-in/{{ N[r.key].slug }}/">{{ r.name|short }} <small>{{ r.dv|pct }} DV</small></a>{% else %}<span class="chip">{{ r.name|short }} <small>{{ r.dv|pct }} DV</small></span>{% endif %}{% endfor %}</div>
+{% if f.appears %}<div class="chips">{% for k, rk in f.appears[:6] %}<a class="chip chip-rank" href="/foods-high-in/{{ N[k].slug }}/{% if rk.group and (k in ['potassium','magnesium','iron','protein','fiber','calcium','zinc','vit_c','vit_d','b12']) %}{{ f.group }}/{% endif %}">{% if rk.group %}#{{ rk.group }} of {{ rk.group_n }} {{ group_names[f.group]|lower }}{% else %}#{{ rk.all }} of {{ rk.all_n }} foods{% endif %} for {{ N[k].name|nlow }}</a>{% endfor %}</div>{% endif %}
+
+<div class="grid2">
+<div>
+<div class="nf" aria-label="Nutrition facts panel">
+<p class="nf-title">Nutrition Facts</p>
+<div class="nf-serv"><span>Serving size</span><span>{{ f.serving.short if not f.serving.fallback else '100 g' }} ({{ f.serving.g|fmt(0) }} g)</span></div>
+<div class="nf-cal"><span><b>Calories</b></span><b>{{ f.kcal|fmt(0) }}</b></div>
+{% set S = f.tables['serving'] %}
+{% macro nfrow(key, label, cls='') %}{% set r = S|selectattr('key','equalto',key)|first %}{% if r %}<div class="nf-row {{ cls }}"><span>{% if cls == '' %}<b>{{ label }}</b>{% else %}{{ label }}{% endif %} {{ r.amount|fmt(r.decimals) }}{{ r.unit }}</span><span>{% if r.dv is not none %}<b>{{ r.dv|pct }}</b>{% endif %}</span></div>{% endif %}{% endmacro %}
+{{ nfrow('fat', 'Total Fat') }}{{ nfrow('sat_fat', 'Saturated Fat', 'ind') }}{{ nfrow('trans_fat', 'Trans Fat', 'ind') }}
+{{ nfrow('cholesterol', 'Cholesterol') }}{{ nfrow('sodium', 'Sodium') }}
+{{ nfrow('carbs', 'Total Carbohydrate') }}{{ nfrow('fiber', 'Dietary Fiber', 'ind') }}{{ nfrow('sugars', 'Total Sugars', 'ind') }}
+{% set r = S|selectattr('key','equalto','protein')|first %}{% if r %}<div class="nf-row thick"><span><b>Protein</b> {{ r.amount|fmt(1) }}g</span><span><b>{{ r.dv|pct }}</b></span></div>{% endif %}
+{{ nfrow('vit_d', 'Vitamin D', 'ind') }}{{ nfrow('calcium', 'Calcium', 'ind') }}{{ nfrow('iron', 'Iron', 'ind') }}{{ nfrow('potassium', 'Potassium', 'ind') }}
+<p class="nf-dv">* The % Daily Value (DV) tells you how much a nutrient in a serving contributes to a daily diet. 2,000 calories a day is used for general nutrition advice. Values from USDA FoodData Central; label rounding rules are not applied.</p>
+</div>
+</div>
+<div>
+<div class="panel"><h3 class="h-sm">Calorie breakdown</h3><div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">{{ f.donut }}<ul class="small" style="margin:0;padding-left:18px">{% set p = S|selectattr('key','equalto','protein')|first %}{% set fa = S|selectattr('key','equalto','fat')|first %}{% set c = S|selectattr('key','equalto','carbs')|first %}<li><span class="ca">■</span> Protein {{ f.macro_pct.protein|fmt(0) }}%</li><li><span class="cb">■</span> Fat {{ f.macro_pct.fat|fmt(0) }}%</li><li><span style="color:var(--accent-2)">■</span> Carbohydrate {{ f.macro_pct.carbs|fmt(0) }}%</li></ul></div><p class="tiny muted" style="margin:8px 0 0">Share of calories by the 4-9-4 Atwater factors; the centre shows USDA's calorie value.</p></div>
+<div class="panel" style="margin-top:14px"><h3 class="h-sm">Scores</h3>{{ score_block(f.nrf, f.dii, f.dii_label, f.dii_pct) }}</div>
+</div>
+</div>
+
+<h2>All nutrients in {{ f.name|lower_name }}</h2>
+<div class="tabs" data-group="nt" role="tablist">{% for key, label, g in f.bases %}<button type="button" role="tab" data-tab="{{ key }}" aria-selected="{{ 'true' if loop.first else 'false' }}">Per {{ label }}</button>{% endfor %}</div>
+{% for key, label, g in f.bases %}
+<div data-tabpanel="nt" data-tab="{{ key }}" {% if not loop.first %}hidden{% endif %}>
+<div class="table-wrap"><table><thead><tr><th>Nutrient</th><th class="num">Per {{ label }}</th><th>% Daily Value</th></tr></thead>
+<tbody>{{ nutrient_rows(f.tables[key], ['macros', 'fats', 'vitamins', 'minerals', 'carotenoids', 'other', 'amino']) }}</tbody></table></div>
+</div>
+{% endfor %}
+<p class="small muted">Missing nutrients were not analysed by USDA for this food; they are not zero. <span class="src-f">F</span> marks a value updated from Foundation Foods (April 2026 analytical data). Source: <a href="https://fdc.nal.usda.gov/food-details/{{ f.fdc_id }}/nutrients" rel="noopener">USDA FoodData Central #{{ f.fdc_id }}</a> ("{{ f.desc }}"){% if f.fnd_id %}, Foundation Foods #{{ f.fnd_id }}{% endif %}.</p>
+{{ ad() }}
+{% if f.variants %}
+<h2>{{ f.name|short }} variants compared</h2>
+<p class="muted small">Per 100 g, so preparations can be compared directly.</p>
+<div class="table-wrap"><table class="sortable"><thead><tr><th>Variant</th><th class="num" data-sort="num">kcal</th><th class="num" data-sort="num">Protein g</th><th class="num" data-sort="num">Fat g</th><th class="num" data-sort="num">Carbs g</th><th class="num" data-sort="num">Fiber g</th><th class="num" data-sort="num">Sugars g</th><th class="num" data-sort="num">Potassium mg</th><th class="num" data-sort="num">Vit C mg</th><th class="num" data-sort="num">Sodium mg</th></tr></thead>
+<tbody>{% for v in [{'label': f.name ~ ' (this page)', 'n': f.n}] + f.variants %}<tr><td>{{ v.label }}</td>{% for k in ['energy','protein','fat','carbs','fiber','sugars','potassium','vit_c','sodium'] %}<td class="num" data-v="{{ v.n.get(k, 0) }}">{{ v.n.get(k)|fmt(N[k].decimals) }}</td>{% endfor %}</tr>{% endfor %}</tbody></table></div>
+{% endif %}
+{% if answers %}
+<h2>Nutrients in {{ f.name|lower_name }}, in detail</h2>
+<ul class="pill-list">{% for nk, nd in answers %}<li><a href="/food/{{ f.slug }}/{{ nd.slug }}/">{{ nd.name|short }} in {{ f.name|lower_name }}</a></li>{% endfor %}</ul>
+{% endif %}
+{% if comps %}
+<h2>Compare {{ f.name|lower_name }} with…</h2>
+<ul class="pill-list">{% for c in comps %}<li><a href="/compare/{{ c.id }}/">{{ c.title }}</a></li>{% endfor %}</ul>
+{% endif %}
+{{ faq_block(faq) }}
+<h2>More {{ group_names[f.group]|lower }}</h2>
+<ul class="pill-list">{% for x in same %}<li><a href="{{ x.url }}">{{ x.name }}</a></li>{% endfor %}{% if f.group in meta.rank_groups %}<li><a href="/category/{{ f.group }}/">All {{ group_names[f.group]|lower }}</a></li>{% endif %}</ul>
+{% endblock %}

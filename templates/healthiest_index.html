@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>Healthiest foods by category</h1>
+<p class="lede">Each category is ranked by a published nutrient-density score computed from USDA data, with the inputs shown for every item, so you can see why a food ranks where it does. <a href="/about/methodology/">How the score works</a>.</p>
+<div class="cards">{% for c in cats %}<a class="card" href="/healthiest/{{ c.slug }}/"><span class="card-title">Healthiest {{ c.name|lower }}</span><span class="card-meta">#1 {{ c.rows[0].name }}</span><span class="card-text">{{ c.total }} {{ c.noun }} ranked · then {{ c.rows[1].name|short }}, {{ c.rows[2].name|short }}</span></a>{% endfor %}</div>
+{% endblock %}
