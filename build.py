@@ -41,7 +41,7 @@ ADSENSE_PUB = "ca-pub-5861928596436289"
 GA_ID = "G-4XSPLZKQB3"                                        # GA4 measurement id (G-XXXXXXXXXX); tags are omitted while empty
 AD_SLOTS: dict[str, str] = {}                     # AdSense slot ids; empty = auto ads only
 TODAY = date.today()
-DATA_UPDATED = "2026-10-15"   # last data/content change: dateModified, sitemap lastmod, "Updated" lines
+DATA_UPDATED = "2026-10-16"   # last data/content change: dateModified, sitemap lastmod, "Updated" lines
 PUBLISHED = "2026-10-15"      # site launch: datePublished
 USDA_CITATION = "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central, 2026. fdc.nal.usda.gov."
 
@@ -141,6 +141,10 @@ def dataset_ld(name: str, desc: str, url: str) -> dict:
             "license": "https://creativecommons.org/publicdomain/zero/1.0/", "isAccessibleForFree": True,
             "creator": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL},
             "isBasedOn": {"@type": "Dataset", "name": "USDA FoodData Central", "url": "https://fdc.nal.usda.gov/",
+                          "description": "USDA FoodData Central nutrient profiles (Foundation Foods and SR Legacy releases) giving analysed "
+                                         "nutrient amounts per 100 g of food, published by the U.S. Department of Agriculture.",
+                          "creator": {"@type": "Organization", "name": "U.S. Department of Agriculture, Agricultural Research Service",
+                                      "url": "https://www.ars.usda.gov/"},
                           "license": "https://creativecommons.org/publicdomain/zero/1.0/"},
             "dateModified": DATA_UPDATED}
 
