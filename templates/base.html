@@ -41,7 +41,8 @@ gtag('consent', 'default', {'analytics_storage': 'granted', 'ad_storage': 'grant
 {% endif %}
 {% for ld in jsonld %}<script type="application/ld+json">{{ ld|tojson }}</script>
 {% endfor %}
-</head>
+{% if ahrefs_key %}<script src="https://analytics.ahrefs.com/analytics.js" data-key="{{ ahrefs_key }}" async></script>
+{% endif %}</head>
 <body>
 <header class="site-header">
 <div class="wrap header-inner">

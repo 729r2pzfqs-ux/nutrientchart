@@ -38,6 +38,8 @@ SITE_NAME = "NutrientChart"
 CONTACT_EMAIL = "info@nutrientchart.com"
 OG_IMAGE = SITE_URL + "/static/og-image.png"      # 1200x630, scripts/make_og.py
 ADSENSE_PUB = "ca-pub-5861928596436289"
+# Ahrefs Web Analytics (no cookies). Loaded last in <head>, after consent defaults, AdSense and gtag. Blank = tag omitted.
+AHREFS_KEY = "wpYUkkhIPsueLJwl5C44vQ"
 GA_ID = "G-4XSPLZKQB3"                                        # GA4 measurement id (G-XXXXXXXXXX); tags are omitted while empty
 AD_SLOTS: dict[str, str] = {}                     # AdSense slot ids; empty = auto ads only
 TODAY = date.today()
@@ -176,7 +178,7 @@ class Site:
                                trim_blocks=True, lstrip_blocks=True)
         self.env.filters.update(fmt=fmt, pct=pct, lower_name=lower_name, short=short_name, nlow=nlow)
         self.env.globals.update(site_name=SITE_NAME, site_url=SITE_URL, email=CONTACT_EMAIL, adsense_pub=ADSENSE_PUB,
-                                ga_id=GA_ID, ad_slots=AD_SLOTS, og_image=OG_IMAGE, asset=asset, year_now=TODAY.year,
+                                ga_id=GA_ID, ahrefs_key=AHREFS_KEY, ad_slots=AD_SLOTS, og_image=OG_IMAGE, asset=asset, year_now=TODAY.year,
                                 updated=DATA_UPDATED, N=self.N, group_names=GROUP_SLUG_NAMES, svg=svg, Markup=Markup,
                                 rank_keys=self.rank_keys, meta=self.meta, nut_group_names=NUT_GROUP_NAMES,
                                 usda_citation=USDA_CITATION)
