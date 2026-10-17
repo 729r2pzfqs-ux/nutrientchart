@@ -34,7 +34,12 @@ gtag('consent', 'default', {
 });
 gtag('consent', 'default', {'analytics_storage': 'granted', 'ad_storage': 'granted', 'ad_user_data': 'granted', 'ad_personalization': 'granted'});
 </script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5861928596436289" crossorigin="anonymous"></script>
+<script>
+/* AdSense (~225 KB plus ad requests) loads after the page's load event so it doesn't slow first paint or page load. */
+(function(){function tags(){var s=document.createElement('script');s.async=true;s.crossOrigin='anonymous';
+s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5861928596436289';document.head.appendChild(s);}
+if(document.readyState==='complete')setTimeout(tags,0);else window.addEventListener('load',function(){setTimeout(tags,0);});})();
+</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4XSPLZKQB3"></script>
 <script>gtag('js', new Date()); gtag('config', 'G-4XSPLZKQB3');</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "acceptedAnswer": {"@type": "Answer", "text": "Among fish and seafood in the USDA database, Fish, tuna (fresh, bluefin, cooked, dry heat) has the most protein per serving: 25.4 g per 3 oz (51% of the Daily Value). Per 100 g it contains 29.9 g."}, "name": "Which food is highest in protein?"}, {"@type": "Question", "acceptedAnswer": {"@type": "Answer", "text": "The FDA Daily Value used on Nutrition Facts labels is 50 g of protein for adults and children aged 4 and over. Individual needs vary with age, sex, pregnancy and health conditions."}, "name": "How much protein do I need per day?"}, {"@type": "Question", "acceptedAnswer": {"@type": "Answer", "text": "FDA labeling rules call a food a \u0027good source\u0027 when one serving provides 10 to 19% of the Daily Value and \u0027high\u0027 or \u0027excellent\u0027 at 20% or more. 14 of the 14 foods on this list reach 20% DV per serving."}, "name": "What counts as a food high in protein?"}]}</script>
@@ -44,6 +49,8 @@ gtag('consent', 'default', {'analytics_storage': 'granted', 'ad_storage': 'grant
 <script src="https://analytics.ahrefs.com/analytics.js" data-key="wpYUkkhIPsueLJwl5C44vQ" async></script>
 </head>
 <body>
+<!-- Cloudflare email obfuscation off: its rewritten email links 404 on GitHub Pages -->
+<!--email_off-->
 <header class="site-header">
 <div class="wrap header-inner">
 <a href="/" class="logo"><svg viewBox="0 0 512 512" aria-hidden="true"><rect x="96" y="312" width="76" height="120" rx="16" fill="#e7f3ec" opacity=".5"/><rect x="218" y="248" width="76" height="184" rx="16" fill="#e7f3ec" opacity=".75"/><rect x="340" y="176" width="76" height="256" rx="16" fill="#34c177"/><path d="M120 236 C120 140 200 72 318 68 C322 184 254 258 150 262 C140 262 128 254 120 236 Z" fill="#34c177"/><path d="M136 252 C180 196 236 150 300 96" stroke="#0f2a1f" stroke-width="16" stroke-linecap="round" fill="none"/></svg>Nutrient<span>Chart</span></a>
@@ -92,5 +99,6 @@ gtag('consent', 'default', {'analytics_storage': 'granted', 'ad_storage': 'grant
 </div>
 </footer>
 <script src="/static/site.js?v=9deafec352" defer></script>
+<!--/email_off-->
 </body>
 </html>

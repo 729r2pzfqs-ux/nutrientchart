@@ -95,7 +95,8 @@ def fit_desc(d: str, n: int = 158) -> str:
         return d
     cut = d[:n]
     dot = cut.rfind(". ")
-    return cut[:dot + 1] if dot >= 90 else cut[:n - 1].rsplit(" ", 1)[0].rstrip(",;:") + "…"
+    # keep whole sentences only if that still leaves an informative (>= 120 char) description
+    return cut[:dot + 1] if dot + 1 >= 120 else cut[:n - 1].rsplit(" ", 1)[0].rstrip(",;:") + "…"
 
 
 def asset(name: str) -> str:
@@ -373,7 +374,7 @@ class Site:
         for key in self.ndefs["low_pages"]:
             self.ranking_page(key, low=True)
         self.render("ranking_index_low.html", "/foods-low-in/", "Foods Low in Sodium and Sugar: Ranked Lists",
-                    "Whole foods lowest in sodium and lowest in sugar per serving, ranked from USDA data and sorted by nutrient density.",
+                    "Whole foods lowest in sodium and lowest in sugar per serving, ranked from USDA FoodData Central data and sorted by nutrient density, with full nutrition facts.",
                     crumbs=[("/", "Home"), ("/foods-low-in/", "Foods low in")], priority=0.6,
                     low=[(k, self.N[k], self.rankings["low_" + k]["all"][:5]) for k in self.ndefs["low_pages"]])
 
@@ -574,7 +575,7 @@ class Site:
         if nd.get("dv"):
             faq.append({"q": f"How much {nlow} do I need a day?", "a": f"The FDA Daily Value is {fmt(nd['dv'], 2)} {unit}. One {serv} of {ln} covers {pct(self.dv(key, amt))} of it."})
         ld = [faq_ld(faq)]
-        self.render("answer.html", path, title, answer + rank_txt,
+        self.render("answer.html", path, title, answer + rank_txt + " Amounts for every serving size, %DV and the top foods, from USDA FoodData Central.",
                     crumbs=[("/", "Home"), ("/food/", "Foods"), (f["url"], name), (path, f"{nshort}")], jsonld=ld, priority=0.7,
                     f=f, nd=nd, key=key, rows=rows, answer=answer, rank_txt=rank_txt, variants=variants, top=top, nlow=nlow, nshort=nshort, unit=unit, faq=faq)
         self.search.append({"t": f"{nshort} in {ln}", "u": path, "d": "Nutrient in food", "k": f"{nlow} {f.get('aliases', '')}"})
@@ -764,11 +765,11 @@ class Site:
 
     def static_pages(self):
         pages = [
-            ("page_about.html", "/about/", "About NutrientChart", "What NutrientChart is, where the data comes from (USDA FoodData Central), who it is for and how to report an error."),
+            ("page_about.html", "/about/", "About NutrientChart", "NutrientChart is a free nutrition reference built on USDA FoodData Central: what it covers, how the numbers are calculated, who it is for and how to report an error."),
             ("page_methodology.html", "/about/methodology/", "Methodology: Servings, %DV and Scores", "How NutrientChart ranks foods: serving sizes, the whole-food filter, FDA Daily Values, the NRF9.3 nutrient-density score and the inflammatory profile score."),
             ("page_data_sources.html", "/about/data-sources/", "Data Sources and Licensing", "The datasets behind NutrientChart: USDA SR Legacy and Foundation Foods (CC0), FDA Daily Values and the research behind the scores."),
             ("page_privacy.html", "/privacy/", "Privacy Policy", "NutrientChart privacy policy: no accounts or forms, cookies used by Google AdSense and analytics, consent for EU visitors."),
-            ("page_terms.html", "/terms/", "Terms of Use", "NutrientChart terms of use: nutrition data for general information only, not medical advice, no warranty."),
+            ("page_terms.html", "/terms/", "Terms of Use", "NutrientChart's nutrition data is for general information only, not medical advice, and comes with no warranty. Full terms of use, data licensing and contact details."),
         ]
         for tpl, path, title, desc in pages:
             crumbs = [("/", "Home")] + ([("/about/", "About")] if path.startswith("/about/") and path != "/about/" else []) + [(path, title.split(":")[0])]
